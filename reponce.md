@@ -13,7 +13,7 @@ absance d'indexation randu ancor plus lourd a cose de SELECT\*
 
 ## 2.
 
-fichier sql 1
+fichier [sql_1.sql](sqlFile/sql_1.sql)
 
 Limit
 Coût : 27.41..29.36
@@ -49,7 +49,7 @@ Partition Pruning permet d'exclure les pzrtition 2024 et 2025 sans il lirais les
 
 ## 3.
 
-fichier sql_2
+fichier [sql_2.sql](sqlFile/sql_2.sql)
 
 # P2
 
@@ -69,4 +69,8 @@ fichier sql_2
 
 ## 5.
 
-fichier sql_3
+fichier [sql_3.sql](sqlFile/sql_3.sql)
+
+## 6.
+
+fichier [sql_4.sql](sqlFile/sql_4.sql)
