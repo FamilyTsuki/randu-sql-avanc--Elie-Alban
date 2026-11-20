@@ -1,4 +1,4 @@
-# P1
+# Parti 1
 
 ## 1.
 
@@ -45,7 +45,7 @@ Buffers : 4 hit / 0 read
 Partitions scannées : commandes_2026 (1/3)
 Filtre : statut = LIVREE AND date_commande >= 2026-01-01
 
-Partition Pruning permet d'exclure les pzrtition 2024 et 2025 sans il lirais les 3 sa fais donc gager 2/3 de temp
+Partition Pruning permet d'exclure les pzrtition 2024 et 2025 sans il lirais les 3 sa fais donc gagner 2/3 de temp
 
 ## 3.
 
@@ -56,6 +56,7 @@ fichier [sql_2.sql](sqlFile/sql_2.sql)
 ## 4.
 
 Dépendances fonctionnelles :
+
 - employe_id -> employe_nom, dept_nom
 - projet_id -> chef_projet, chef_projet_tel
 - chef_projet -> chef_projet_tel
@@ -110,14 +111,16 @@ WAL:
 ## 9.
 
 ### (a) GPS 30 000 véhicules / 3s
+
 - Cassandra (Colonnes larges) - AP / PA/EL
 - 10 000 écritures/s en append-only (LSM-Tree). Disponibilité et vitesse prioritaires sur la cohérence immédiate.
 
 ### (b) Facturation bancaire
+
 - PostgreSQL (Relationnel) - CP / PC/EC
 - Transactions ACID strictes, zéro erreur tolérée sur l'argent, modèle 3FN normalisé.
 
 ### (c) Amis et trajets (3 sauts)
+
 - Neo4j (Graphe) - Index-Free Adjacency
 - Traversée directe des liens en mémoire en O(k^3) au lieu de 3 jointures SQL lourdes.
-
