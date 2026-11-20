@@ -51,6 +51,8 @@ Partition Pruning permet d'exclure les pzrtition 2024 et 2025 sans il lirais les
 
 fichier [sql_2.sql](sqlFile/sql_2.sql)
 
+constat stale : apres le insert la vue change pas car elle est figée sur le disque (stale). Il faut lancer le REFRESH MATERIALIZED VIEW pour recalculer les totaux avec la nouvelle commande.
+
 # P2
 
 ## 4.
