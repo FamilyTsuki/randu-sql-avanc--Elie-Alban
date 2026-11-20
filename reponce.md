@@ -82,3 +82,18 @@ fichier [sql_4.sql](sqlFile/sql_4.sql)
 si manager_id == NULL sa ranvera UNKNOWN
 
 fichier [sql_5.sql](sqlFile/sql_5.sql)
+
+## 8.
+
+1. T1 lit solde = 1 000 €
+2. T2 fait un virement de 200 € et commit (`UPDATE ...; COMMIT;`)
+3. T1 relit solde = 800 €
+
+problem : deux lectures identiques dans la même transaction donnent deux résultats différents car READ COMMITTED prend un snapshot frais à chaque instruction
+
+solution : Snapshot MVCC unique figé dès la 1er lecture de T1 T1 continue de lire 1 000 €
+
+WAL:
+
+1. Rejoue les transactions validées et enregistrées dans les log
+2. Annule les transactions interrompues pour éviter les états financiers partiels
