@@ -1,5 +1,3 @@
-sql
-
 WITH RECURSIVE organigramme AS (
     SELECT id, nom, poste, 1 AS niveau, CAST(nom AS VARCHAR(255)) AS chemin
     FROM employes

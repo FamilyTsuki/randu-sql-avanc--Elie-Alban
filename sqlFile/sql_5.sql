@@ -1,5 +1,3 @@
-sql
-
 SELECT employes.id, employes.nom
 FROM employes
 WHERE NOT EXISTS (

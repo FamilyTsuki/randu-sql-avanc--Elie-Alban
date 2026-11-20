@@ -1,4 +1,3 @@
-sql
 -- p1
 CREATE MATERIALIZED VIEW mv_synthese_segments AS
 SELECT c.segment, COUNT(cmd.id) AS nb, ROUND(SUM(cmd.montant_total), 2) AS ca

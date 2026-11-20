@@ -1,4 +1,3 @@
-sql
 WITH classement AS (
     SELECT cat.nom AS categorie,
            produits.nom AS produit,

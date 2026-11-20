@@ -55,6 +55,12 @@ fichier [sql_2.sql](sqlFile/sql_2.sql)
 
 ## 4.
 
+Dépendances fonctionnelles :
+- employe_id -> employe_nom, dept_nom
+- projet_id -> chef_projet, chef_projet_tel
+- chef_projet -> chef_projet_tel
+- (employe_id, projet_id) -> affectation
+
 1FN: Atomisation de projets_liste -> clé composite (employe_id, projet_id).
 2FN: Suppression des dépendances partielles -> isolation de employes et projets.
 3FN: Suppression des dépendances transitives -> isolation de departements et chefs_projet.
@@ -79,7 +85,10 @@ fichier [sql_4.sql](sqlFile/sql_4.sql)
 
 ## 7.
 
-si manager_id == NULL sa ranvera UNKNOWN
+Piège de la logique ternaire SQL :
+`id NOT IN (..., NULL)` équivaut à `id != ... AND id != NULL`.
+Or `id != NULL` s'évalue à `UNKNOWN`.
+Comme `TRUE AND UNKNOWN` donne `UNKNOWN` et que la clause WHERE exige strictement `TRUE`, 0 ligne n'est retournée.
 
 fichier [sql_5.sql](sqlFile/sql_5.sql)
 
