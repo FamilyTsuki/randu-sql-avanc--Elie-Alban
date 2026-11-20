@@ -74,3 +74,11 @@ fichier [sql_3.sql](sqlFile/sql_3.sql)
 ## 6.
 
 fichier [sql_4.sql](sqlFile/sql_4.sql)
+
+# C
+
+## 7.
+
+si manager_id == NULL sa ranvera UNKNOWN
+
+fichier [sql_5.sql](sqlFile/sql_5.sql)
