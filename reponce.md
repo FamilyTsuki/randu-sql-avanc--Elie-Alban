@@ -106,3 +106,18 @@ WAL:
 
 1. Rejoue les transactions validées et enregistrées dans les log
 2. Annule les transactions interrompues pour éviter les états financiers partiels
+
+## 9.
+
+### (a) GPS 30 000 véhicules / 3s
+- Cassandra (Colonnes larges) - AP / PA/EL
+- 10 000 écritures/s en append-only (LSM-Tree). Disponibilité et vitesse prioritaires sur la cohérence immédiate.
+
+### (b) Facturation bancaire
+- PostgreSQL (Relationnel) - CP / PC/EC
+- Transactions ACID strictes, zéro erreur tolérée sur l'argent, modèle 3FN normalisé.
+
+### (c) Amis et trajets (3 sauts)
+- Neo4j (Graphe) - Index-Free Adjacency
+- Traversée directe des liens en mémoire en O(k^3) au lieu de 3 jointures SQL lourdes.
+
