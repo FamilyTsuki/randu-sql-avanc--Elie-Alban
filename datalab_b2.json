@@ -1,0 +1,6411 @@
+{
+  "tables": {
+    "categories": [
+      {
+        "id": 1,
+        "nom": "Serveurs & Stockage",
+        "marge_cible": 0.24
+      },
+      {
+        "id": 2,
+        "nom": "Réseau & Sécurité",
+        "marge_cible": 0.3
+      },
+      {
+        "id": 3,
+        "nom": "Postes de travail",
+        "marge_cible": 0.18
+      },
+      {
+        "id": 4,
+        "nom": "Périphériques Pro",
+        "marge_cible": 0.35
+      },
+      {
+        "id": 5,
+        "nom": "Licences & Cloud",
+        "marge_cible": 0.55
+      },
+      {
+        "id": 6,
+        "nom": "Accessoires Datacenter",
+        "marge_cible": 0.42
+      }
+    ],
+    "entrepots": [
+      {
+        "id": 1,
+        "nom": "Lyon-Est",
+        "ville": "Lyon",
+        "capacite_m3": 4500
+      },
+      {
+        "id": 2,
+        "nom": "Paris-Nord",
+        "ville": "Roissy",
+        "capacite_m3": 8200
+      },
+      {
+        "id": 3,
+        "nom": "Nantes-Ouest",
+        "ville": "Nantes",
+        "capacite_m3": 3100
+      },
+      {
+        "id": 4,
+        "nom": "Toulouse-Sud",
+        "ville": "Toulouse",
+        "capacite_m3": 2900
+      }
+    ],
+    "produits": [
+      {
+        "id": 1,
+        "nom": "Rack Serveur Xeon E24",
+        "categorie_id": 1,
+        "prix_unitaire": 2450,
+        "stock": 18,
+        "entrepot_id": 2
+      },
+      {
+        "id": 2,
+        "nom": "Baie NAS 12To Redondante",
+        "categorie_id": 1,
+        "prix_unitaire": 1390,
+        "stock": 26,
+        "entrepot_id": 1
+      },
+      {
+        "id": 3,
+        "nom": "SSD NVMe Datacenter 4To",
+        "categorie_id": 1,
+        "prix_unitaire": 580,
+        "stock": 94,
+        "entrepot_id": 2
+      },
+      {
+        "id": 4,
+        "nom": "Onduleur Rack 3000VA",
+        "categorie_id": 1,
+        "prix_unitaire": 890,
+        "stock": 31,
+        "entrepot_id": 3
+      },
+      {
+        "id": 5,
+        "nom": "Switch L3 48 Ports PoE+",
+        "categorie_id": 2,
+        "prix_unitaire": 1120,
+        "stock": 22,
+        "entrepot_id": 2
+      },
+      {
+        "id": 6,
+        "nom": "Pare-feu UTM Enterprise",
+        "categorie_id": 2,
+        "prix_unitaire": 1650,
+        "stock": 14,
+        "entrepot_id": 1
+      },
+      {
+        "id": 7,
+        "nom": "Point d'accès Wi-Fi 7 Pro",
+        "categorie_id": 2,
+        "prix_unitaire": 340,
+        "stock": 65,
+        "entrepot_id": 4
+      },
+      {
+        "id": 8,
+        "nom": "Module SFP+ 10Gb Fibre",
+        "categorie_id": 2,
+        "prix_unitaire": 95,
+        "stock": 210,
+        "entrepot_id": 2
+      },
+      {
+        "id": 9,
+        "nom": "Station Dev Ultra 64Go",
+        "categorie_id": 3,
+        "prix_unitaire": 2180,
+        "stock": 19,
+        "entrepot_id": 1
+      },
+      {
+        "id": 10,
+        "nom": "Ultrabook B2 Pro 14",
+        "categorie_id": 3,
+        "prix_unitaire": 1420,
+        "stock": 47,
+        "entrepot_id": 2
+      },
+      {
+        "id": 11,
+        "nom": "Mini-PC Cluster ARM",
+        "categorie_id": 3,
+        "prix_unitaire": 490,
+        "stock": 58,
+        "entrepot_id": 3
+      },
+      {
+        "id": 12,
+        "nom": "Workstation GPU Dual",
+        "categorie_id": 3,
+        "prix_unitaire": 3890,
+        "stock": 8,
+        "entrepot_id": 2
+      },
+      {
+        "id": 13,
+        "nom": "Écran 32\" 4K Calibré",
+        "categorie_id": 4,
+        "prix_unitaire": 670,
+        "stock": 41,
+        "entrepot_id": 1
+      },
+      {
+        "id": 14,
+        "nom": "Station d'accueil Thunderbolt",
+        "categorie_id": 4,
+        "prix_unitaire": 245,
+        "stock": 84,
+        "entrepot_id": 3
+      },
+      {
+        "id": 15,
+        "nom": "Clavier Mécanique Silencieux",
+        "categorie_id": 4,
+        "prix_unitaire": 135,
+        "stock": 112,
+        "entrepot_id": 4
+      },
+      {
+        "id": 16,
+        "nom": "Webcam Conférence 4K",
+        "categorie_id": 4,
+        "prix_unitaire": 195,
+        "stock": 53,
+        "entrepot_id": 1
+      },
+      {
+        "id": 17,
+        "nom": "Licence SGBD Cluster 1 An",
+        "categorie_id": 5,
+        "prix_unitaire": 1800,
+        "stock": 999,
+        "entrepot_id": 2
+      },
+      {
+        "id": 18,
+        "nom": "Suite Sauvegarde Chiffrée",
+        "categorie_id": 5,
+        "prix_unitaire": 420,
+        "stock": 999,
+        "entrepot_id": 2
+      },
+      {
+        "id": 19,
+        "nom": "Pack Monitoring APM",
+        "categorie_id": 5,
+        "prix_unitaire": 750,
+        "stock": 999,
+        "entrepot_id": 2
+      },
+      {
+        "id": 20,
+        "nom": "Certificat TLS Wildcard",
+        "categorie_id": 5,
+        "prix_unitaire": 290,
+        "stock": 999,
+        "entrepot_id": 2
+      },
+      {
+        "id": 21,
+        "nom": "Câble Jarretière OM4 5m",
+        "categorie_id": 6,
+        "prix_unitaire": 28,
+        "stock": 380,
+        "entrepot_id": 1
+      },
+      {
+        "id": 22,
+        "nom": "Rail Coulissant Rack 2U",
+        "categorie_id": 6,
+        "prix_unitaire": 85,
+        "stock": 75,
+        "entrepot_id": 3
+      },
+      {
+        "id": 23,
+        "nom": "PDU Connecté 16A",
+        "categorie_id": 6,
+        "prix_unitaire": 310,
+        "stock": 34,
+        "entrepot_id": 4
+      },
+      {
+        "id": 24,
+        "nom": "Sonde Température SNMP",
+        "categorie_id": 6,
+        "prix_unitaire": 145,
+        "stock": 62,
+        "entrepot_id": 1
+      }
+    ],
+    "clients": [
+      {
+        "id": 1,
+        "nom": "Camille Laurent",
+        "email": "camille.laurent@hexatech.fr",
+        "ville": "Lyon",
+        "segment": "Entreprise",
+        "date_inscription": "2024-01-14"
+      },
+      {
+        "id": 2,
+        "nom": "Lucas Moreau",
+        "email": "lucas.moreau@novalab.fr",
+        "ville": "Paris",
+        "segment": "Grand Compte",
+        "date_inscription": "2024-02-03"
+      },
+      {
+        "id": 3,
+        "nom": "Inès Bernard",
+        "email": "ines.bernard@atelier-num.fr",
+        "ville": "Nantes",
+        "segment": "PME",
+        "date_inscription": "2024-02-19"
+      },
+      {
+        "id": 4,
+        "nom": "Théo Petit",
+        "email": "theo.petit@cloudops.fr",
+        "ville": "Toulouse",
+        "segment": "Entreprise",
+        "date_inscription": "2024-03-11"
+      },
+      {
+        "id": 5,
+        "nom": "Manon Roux",
+        "email": "manon.roux@dataviz.fr",
+        "ville": "Lyon",
+        "segment": "PME",
+        "date_inscription": "2024-04-02"
+      },
+      {
+        "id": 6,
+        "nom": "Hugo Fournier",
+        "email": "hugo.fournier@syscore.fr",
+        "ville": "Paris",
+        "segment": "Grand Compte",
+        "date_inscription": "2024-04-27"
+      },
+      {
+        "id": 7,
+        "nom": "Chloé Girard",
+        "email": "chloe.girard@finops.fr",
+        "ville": "Bordeaux",
+        "segment": "Entreprise",
+        "date_inscription": "2024-05-15"
+      },
+      {
+        "id": 8,
+        "nom": "Nathan Bonnet",
+        "email": "nathan.bonnet@kapsul.fr",
+        "ville": "Lille",
+        "segment": "Startup",
+        "date_inscription": "2024-06-08"
+      },
+      {
+        "id": 9,
+        "nom": "Léa Dupuis",
+        "email": "lea.dupuis@meddata.fr",
+        "ville": "Lyon",
+        "segment": "Grand Compte",
+        "date_inscription": "2024-06-22"
+      },
+      {
+        "id": 10,
+        "nom": "Enzo Lefèvre",
+        "email": "enzo.lefevre@vecteur.fr",
+        "ville": "Paris",
+        "segment": "PME",
+        "date_inscription": "2024-07-09"
+      },
+      {
+        "id": 11,
+        "nom": "Sarah Mercier",
+        "email": "sarah.mercier@arcadia.fr",
+        "ville": "Nantes",
+        "segment": "Entreprise",
+        "date_inscription": "2024-08-18"
+      },
+      {
+        "id": 12,
+        "nom": "Tom Blanc",
+        "email": "tom.blanc@aero-si.fr",
+        "ville": "Toulouse",
+        "segment": "Grand Compte",
+        "date_inscription": "2024-09-05"
+      },
+      {
+        "id": 13,
+        "nom": "Jade Guérin",
+        "email": "jade.guerin@pixelio.fr",
+        "ville": "Bordeaux",
+        "segment": "Startup",
+        "date_inscription": "2024-10-12"
+      },
+      {
+        "id": 14,
+        "nom": "Louis Chevalier",
+        "email": "louis.chevalier@opale.fr",
+        "ville": "Lyon",
+        "segment": "PME",
+        "date_inscription": "2024-11-01"
+      },
+      {
+        "id": 15,
+        "nom": "Emma François",
+        "email": "emma.francois@cybershield.fr",
+        "ville": "Paris",
+        "segment": "Entreprise",
+        "date_inscription": "2025-01-10"
+      },
+      {
+        "id": 16,
+        "nom": "Gabriel Leroy",
+        "email": "gabriel.leroy@logitech-si.fr",
+        "ville": "Lille",
+        "segment": "PME",
+        "date_inscription": "2025-02-14"
+      },
+      {
+        "id": 17,
+        "nom": "Zoé Garnier",
+        "email": "zoe.garnier@biocloud.fr",
+        "ville": "Lyon",
+        "segment": "Grand Compte",
+        "date_inscription": "2025-03-04"
+      },
+      {
+        "id": 18,
+        "nom": "Arthur Faure",
+        "email": "arthur.faure@gridcompute.fr",
+        "ville": "Nantes",
+        "segment": "Startup",
+        "date_inscription": "2025-04-19"
+      },
+      {
+        "id": 19,
+        "nom": "Lina Andre",
+        "email": "lina.andre@indus-it.fr",
+        "ville": "Toulouse",
+        "segment": "Entreprise",
+        "date_inscription": "2025-05-23"
+      },
+      {
+        "id": 20,
+        "nom": "Raphaël Perrin",
+        "email": "raphael.perrin@quantis.fr",
+        "ville": "Paris",
+        "segment": "Grand Compte",
+        "date_inscription": "2025-06-30"
+      },
+      {
+        "id": 21,
+        "nom": "Clara Clement",
+        "email": "clara.clement@bzh-data.fr",
+        "ville": "Rennes",
+        "segment": "PME",
+        "date_inscription": "2025-08-12"
+      },
+      {
+        "id": 22,
+        "nom": "Jules Morin",
+        "email": "jules.morin@nordic-it.fr",
+        "ville": "Lille",
+        "segment": "Startup",
+        "date_inscription": "2025-09-20"
+      },
+      {
+        "id": 23,
+        "nom": "Alice Gauthier",
+        "email": "alice.gauthier@alpes-tech.fr",
+        "ville": "Grenoble",
+        "segment": "Entreprise",
+        "date_inscription": "2025-11-04"
+      },
+      {
+        "id": 24,
+        "nom": "Adam Barbier",
+        "email": "adam.barbier@rhone-cloud.fr",
+        "ville": "Lyon",
+        "segment": "PME",
+        "date_inscription": "2026-01-08"
+      }
+    ],
+    "commandes": [
+      {
+        "id": 1,
+        "client_id": 9,
+        "date_commande": "2024-09-04",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1962
+      },
+      {
+        "id": 2,
+        "client_id": 12,
+        "date_commande": "2024-04-09",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 574
+      },
+      {
+        "id": 3,
+        "client_id": 15,
+        "date_commande": "2024-11-14",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 9990
+      },
+      {
+        "id": 4,
+        "client_id": 18,
+        "date_commande": "2024-06-19",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 580
+      },
+      {
+        "id": 5,
+        "client_id": 21,
+        "date_commande": "2024-01-24",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 8900
+      },
+      {
+        "id": 6,
+        "client_id": 24,
+        "date_commande": "2024-08-01",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 7938
+      },
+      {
+        "id": 7,
+        "client_id": 3,
+        "date_commande": "2024-03-06",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 405
+      },
+      {
+        "id": 8,
+        "client_id": 6,
+        "date_commande": "2024-10-11",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 1740
+      },
+      {
+        "id": 9,
+        "client_id": 9,
+        "date_commande": "2024-05-16",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 3045
+      },
+      {
+        "id": 10,
+        "client_id": 12,
+        "date_commande": "2024-12-21",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 3300
+      },
+      {
+        "id": 11,
+        "client_id": 15,
+        "date_commande": "2024-07-26",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 2835
+      },
+      {
+        "id": 12,
+        "client_id": 18,
+        "date_commande": "2024-02-03",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 4390
+      },
+      {
+        "id": 13,
+        "client_id": 21,
+        "date_commande": "2024-09-08",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 28
+      },
+      {
+        "id": 14,
+        "client_id": 24,
+        "date_commande": "2024-04-13",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 9320
+      },
+      {
+        "id": 15,
+        "client_id": 3,
+        "date_commande": "2024-11-18",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 2028
+      },
+      {
+        "id": 16,
+        "client_id": 6,
+        "date_commande": "2024-06-23",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 14004
+      },
+      {
+        "id": 17,
+        "client_id": 9,
+        "date_commande": "2024-01-28",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 2090
+      },
+      {
+        "id": 18,
+        "client_id": 12,
+        "date_commande": "2024-08-05",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 19090
+      },
+      {
+        "id": 19,
+        "client_id": 15,
+        "date_commande": "2024-03-10",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1740
+      },
+      {
+        "id": 20,
+        "client_id": 18,
+        "date_commande": "2024-10-15",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 515
+      },
+      {
+        "id": 21,
+        "client_id": 21,
+        "date_commande": "2024-05-20",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 2691
+      },
+      {
+        "id": 22,
+        "client_id": 24,
+        "date_commande": "2024-12-25",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 840
+      },
+      {
+        "id": 23,
+        "client_id": 3,
+        "date_commande": "2024-07-02",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 7530
+      },
+      {
+        "id": 24,
+        "client_id": 6,
+        "date_commande": "2024-02-07",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 4890
+      },
+      {
+        "id": 25,
+        "client_id": 9,
+        "date_commande": "2024-09-12",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2180
+      },
+      {
+        "id": 26,
+        "client_id": 12,
+        "date_commande": "2024-04-17",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 516.6
+      },
+      {
+        "id": 27,
+        "client_id": 15,
+        "date_commande": "2024-11-22",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 9990
+      },
+      {
+        "id": 28,
+        "client_id": 18,
+        "date_commande": "2024-06-27",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 580
+      },
+      {
+        "id": 29,
+        "client_id": 21,
+        "date_commande": "2024-01-04",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 8900
+      },
+      {
+        "id": 30,
+        "client_id": 24,
+        "date_commande": "2024-08-09",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 8820
+      },
+      {
+        "id": 31,
+        "client_id": 3,
+        "date_commande": "2024-03-14",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 364.5
+      },
+      {
+        "id": 32,
+        "client_id": 6,
+        "date_commande": "2024-10-19",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 1740
+      },
+      {
+        "id": 33,
+        "client_id": 9,
+        "date_commande": "2024-05-24",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 3045
+      },
+      {
+        "id": 34,
+        "client_id": 12,
+        "date_commande": "2024-12-01",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 3300
+      },
+      {
+        "id": 35,
+        "client_id": 15,
+        "date_commande": "2024-07-06",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 3150
+      },
+      {
+        "id": 36,
+        "client_id": 18,
+        "date_commande": "2024-02-11",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 3951
+      },
+      {
+        "id": 37,
+        "client_id": 21,
+        "date_commande": "2024-09-16",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 28
+      },
+      {
+        "id": 38,
+        "client_id": 24,
+        "date_commande": "2024-04-21",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 9320
+      },
+      {
+        "id": 39,
+        "client_id": 3,
+        "date_commande": "2024-11-26",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 2028
+      },
+      {
+        "id": 40,
+        "client_id": 6,
+        "date_commande": "2024-06-03",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 15560
+      },
+      {
+        "id": 41,
+        "client_id": 9,
+        "date_commande": "2024-01-08",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 1881
+      },
+      {
+        "id": 42,
+        "client_id": 12,
+        "date_commande": "2024-08-13",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 19090
+      },
+      {
+        "id": 43,
+        "client_id": 15,
+        "date_commande": "2024-03-18",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1740
+      },
+      {
+        "id": 44,
+        "client_id": 18,
+        "date_commande": "2024-10-23",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 515
+      },
+      {
+        "id": 45,
+        "client_id": 21,
+        "date_commande": "2024-05-28",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 2990
+      },
+      {
+        "id": 46,
+        "client_id": 24,
+        "date_commande": "2024-12-05",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 756
+      },
+      {
+        "id": 47,
+        "client_id": 3,
+        "date_commande": "2024-07-10",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 7530
+      },
+      {
+        "id": 48,
+        "client_id": 6,
+        "date_commande": "2024-02-15",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 4890
+      },
+      {
+        "id": 49,
+        "client_id": 9,
+        "date_commande": "2024-09-20",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2180
+      },
+      {
+        "id": 50,
+        "client_id": 12,
+        "date_commande": "2024-04-25",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 574
+      },
+      {
+        "id": 51,
+        "client_id": 15,
+        "date_commande": "2024-11-02",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 8991
+      },
+      {
+        "id": 52,
+        "client_id": 18,
+        "date_commande": "2024-06-07",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 580
+      },
+      {
+        "id": 53,
+        "client_id": 21,
+        "date_commande": "2024-01-12",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 8900
+      },
+      {
+        "id": 54,
+        "client_id": 24,
+        "date_commande": "2024-08-17",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 8820
+      },
+      {
+        "id": 55,
+        "client_id": 3,
+        "date_commande": "2024-03-22",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 405
+      },
+      {
+        "id": 56,
+        "client_id": 6,
+        "date_commande": "2024-10-27",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 1566
+      },
+      {
+        "id": 57,
+        "client_id": 9,
+        "date_commande": "2024-05-04",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 3045
+      },
+      {
+        "id": 58,
+        "client_id": 12,
+        "date_commande": "2024-12-09",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 3300
+      },
+      {
+        "id": 59,
+        "client_id": 15,
+        "date_commande": "2024-07-14",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 3150
+      },
+      {
+        "id": 60,
+        "client_id": 18,
+        "date_commande": "2024-02-19",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 4390
+      },
+      {
+        "id": 61,
+        "client_id": 21,
+        "date_commande": "2024-09-24",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 25.2
+      },
+      {
+        "id": 62,
+        "client_id": 24,
+        "date_commande": "2024-04-01",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 9320
+      },
+      {
+        "id": 63,
+        "client_id": 3,
+        "date_commande": "2024-11-06",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 2028
+      },
+      {
+        "id": 64,
+        "client_id": 6,
+        "date_commande": "2024-06-11",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 15560
+      },
+      {
+        "id": 65,
+        "client_id": 9,
+        "date_commande": "2024-01-16",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 2090
+      },
+      {
+        "id": 66,
+        "client_id": 12,
+        "date_commande": "2024-08-21",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 17181
+      },
+      {
+        "id": 67,
+        "client_id": 15,
+        "date_commande": "2024-03-26",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1740
+      },
+      {
+        "id": 68,
+        "client_id": 18,
+        "date_commande": "2024-10-03",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 515
+      },
+      {
+        "id": 69,
+        "client_id": 21,
+        "date_commande": "2024-05-08",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 2990
+      },
+      {
+        "id": 70,
+        "client_id": 24,
+        "date_commande": "2024-12-13",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 840
+      },
+      {
+        "id": 71,
+        "client_id": 3,
+        "date_commande": "2024-07-18",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 6777
+      },
+      {
+        "id": 72,
+        "client_id": 6,
+        "date_commande": "2024-02-23",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 4890
+      },
+      {
+        "id": 73,
+        "client_id": 9,
+        "date_commande": "2024-09-28",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2180
+      },
+      {
+        "id": 74,
+        "client_id": 12,
+        "date_commande": "2024-04-05",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 574
+      },
+      {
+        "id": 75,
+        "client_id": 15,
+        "date_commande": "2024-11-10",
+        "statut": "EN_ATTENTE",
+        "canal": "WEB",
+        "montant_total": 9990
+      },
+      {
+        "id": 76,
+        "client_id": 18,
+        "date_commande": "2024-06-15",
+        "statut": "ANNULEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 522
+      },
+      {
+        "id": 77,
+        "client_id": 21,
+        "date_commande": "2024-01-20",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 8900
+      },
+      {
+        "id": 78,
+        "client_id": 24,
+        "date_commande": "2024-08-25",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 8820
+      },
+      {
+        "id": 79,
+        "client_id": 3,
+        "date_commande": "2024-03-02",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 405
+      },
+      {
+        "id": 80,
+        "client_id": 6,
+        "date_commande": "2024-10-07",
+        "statut": "EXPEDIEE",
+        "canal": "API_B2B",
+        "montant_total": 1740
+      },
+      {
+        "id": 81,
+        "client_id": 10,
+        "date_commande": "2025-10-04",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 1278
+      },
+      {
+        "id": 82,
+        "client_id": 13,
+        "date_commande": "2025-05-09",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 525
+      },
+      {
+        "id": 83,
+        "client_id": 16,
+        "date_commande": "2025-12-14",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 4610
+      },
+      {
+        "id": 84,
+        "client_id": 19,
+        "date_commande": "2025-07-19",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 9800
+      },
+      {
+        "id": 85,
+        "client_id": 22,
+        "date_commande": "2025-02-24",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2990
+      },
+      {
+        "id": 86,
+        "client_id": 1,
+        "date_commande": "2025-09-01",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 10836
+      },
+      {
+        "id": 87,
+        "client_id": 4,
+        "date_commande": "2025-04-06",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 585
+      },
+      {
+        "id": 88,
+        "client_id": 7,
+        "date_commande": "2025-11-11",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1002
+      },
+      {
+        "id": 89,
+        "client_id": 10,
+        "date_commande": "2025-06-16",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 6335
+      },
+      {
+        "id": 90,
+        "client_id": 13,
+        "date_commande": "2025-01-21",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 680
+      },
+      {
+        "id": 91,
+        "client_id": 16,
+        "date_commande": "2025-08-26",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 13203
+      },
+      {
+        "id": 92,
+        "client_id": 19,
+        "date_commande": "2025-03-03",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 8025
+      },
+      {
+        "id": 93,
+        "client_id": 22,
+        "date_commande": "2025-10-08",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 85
+      },
+      {
+        "id": 94,
+        "client_id": 1,
+        "date_commande": "2025-05-13",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 5420
+      },
+      {
+        "id": 95,
+        "client_id": 4,
+        "date_commande": "2025-12-18",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 910
+      },
+      {
+        "id": 96,
+        "client_id": 7,
+        "date_commande": "2025-07-23",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 2412
+      },
+      {
+        "id": 97,
+        "client_id": 10,
+        "date_commande": "2025-02-28",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 5320
+      },
+      {
+        "id": 98,
+        "client_id": 13,
+        "date_commande": "2025-09-05",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 8250
+      },
+      {
+        "id": 99,
+        "client_id": 16,
+        "date_commande": "2025-04-10",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 2670
+      },
+      {
+        "id": 100,
+        "client_id": 19,
+        "date_commande": "2025-11-15",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 8915
+      },
+      {
+        "id": 101,
+        "client_id": 22,
+        "date_commande": "2025-06-20",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 2673.9
+      },
+      {
+        "id": 102,
+        "client_id": 1,
+        "date_commande": "2025-01-25",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 1500
+      },
+      {
+        "id": 103,
+        "client_id": 4,
+        "date_commande": "2025-08-02",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1795
+      },
+      {
+        "id": 104,
+        "client_id": 7,
+        "date_commande": "2025-03-07",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 9870
+      },
+      {
+        "id": 105,
+        "client_id": 10,
+        "date_commande": "2025-10-12",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 1420
+      },
+      {
+        "id": 106,
+        "client_id": 13,
+        "date_commande": "2025-05-17",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 472.5
+      },
+      {
+        "id": 107,
+        "client_id": 16,
+        "date_commande": "2025-12-22",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 4610
+      },
+      {
+        "id": 108,
+        "client_id": 19,
+        "date_commande": "2025-07-27",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 9800
+      },
+      {
+        "id": 109,
+        "client_id": 22,
+        "date_commande": "2025-02-04",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2990
+      },
+      {
+        "id": 110,
+        "client_id": 1,
+        "date_commande": "2025-09-09",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 12040
+      },
+      {
+        "id": 111,
+        "client_id": 4,
+        "date_commande": "2025-04-14",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 526.5
+      },
+      {
+        "id": 112,
+        "client_id": 7,
+        "date_commande": "2025-11-19",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1002
+      },
+      {
+        "id": 113,
+        "client_id": 10,
+        "date_commande": "2025-06-24",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 6335
+      },
+      {
+        "id": 114,
+        "client_id": 13,
+        "date_commande": "2025-01-01",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 680
+      },
+      {
+        "id": 115,
+        "client_id": 16,
+        "date_commande": "2025-08-06",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 14670
+      },
+      {
+        "id": 116,
+        "client_id": 19,
+        "date_commande": "2025-03-11",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 7222.5
+      },
+      {
+        "id": 117,
+        "client_id": 22,
+        "date_commande": "2025-10-16",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 85
+      },
+      {
+        "id": 118,
+        "client_id": 1,
+        "date_commande": "2025-05-21",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 5420
+      },
+      {
+        "id": 119,
+        "client_id": 4,
+        "date_commande": "2025-12-26",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 910
+      },
+      {
+        "id": 120,
+        "client_id": 7,
+        "date_commande": "2025-07-03",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 2680
+      },
+      {
+        "id": 121,
+        "client_id": 10,
+        "date_commande": "2025-02-08",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 4788
+      },
+      {
+        "id": 122,
+        "client_id": 13,
+        "date_commande": "2025-09-13",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 8250
+      },
+      {
+        "id": 123,
+        "client_id": 16,
+        "date_commande": "2025-04-18",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 2670
+      },
+      {
+        "id": 124,
+        "client_id": 19,
+        "date_commande": "2025-11-23",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 8915
+      },
+      {
+        "id": 125,
+        "client_id": 22,
+        "date_commande": "2025-06-28",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 2971
+      },
+      {
+        "id": 126,
+        "client_id": 1,
+        "date_commande": "2025-01-05",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 1350
+      },
+      {
+        "id": 127,
+        "client_id": 4,
+        "date_commande": "2025-08-10",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1795
+      },
+      {
+        "id": 128,
+        "client_id": 7,
+        "date_commande": "2025-03-15",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 9870
+      },
+      {
+        "id": 129,
+        "client_id": 10,
+        "date_commande": "2025-10-20",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 1420
+      },
+      {
+        "id": 130,
+        "client_id": 13,
+        "date_commande": "2025-05-25",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 525
+      },
+      {
+        "id": 131,
+        "client_id": 16,
+        "date_commande": "2025-12-02",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 4149
+      },
+      {
+        "id": 132,
+        "client_id": 19,
+        "date_commande": "2025-07-07",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 9800
+      },
+      {
+        "id": 133,
+        "client_id": 22,
+        "date_commande": "2025-02-12",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2990
+      },
+      {
+        "id": 134,
+        "client_id": 1,
+        "date_commande": "2025-09-17",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 12040
+      },
+      {
+        "id": 135,
+        "client_id": 4,
+        "date_commande": "2025-04-22",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 585
+      },
+      {
+        "id": 136,
+        "client_id": 7,
+        "date_commande": "2025-11-27",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 901.8
+      },
+      {
+        "id": 137,
+        "client_id": 10,
+        "date_commande": "2025-06-04",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 6335
+      },
+      {
+        "id": 138,
+        "client_id": 13,
+        "date_commande": "2025-01-09",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 680
+      },
+      {
+        "id": 139,
+        "client_id": 16,
+        "date_commande": "2025-08-14",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 14670
+      },
+      {
+        "id": 140,
+        "client_id": 19,
+        "date_commande": "2025-03-19",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 8025
+      },
+      {
+        "id": 141,
+        "client_id": 22,
+        "date_commande": "2025-10-24",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 76.5
+      },
+      {
+        "id": 142,
+        "client_id": 1,
+        "date_commande": "2025-05-01",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 5420
+      },
+      {
+        "id": 143,
+        "client_id": 4,
+        "date_commande": "2025-12-06",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 910
+      },
+      {
+        "id": 144,
+        "client_id": 7,
+        "date_commande": "2025-07-11",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 2680
+      },
+      {
+        "id": 145,
+        "client_id": 10,
+        "date_commande": "2025-02-16",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 5320
+      },
+      {
+        "id": 146,
+        "client_id": 13,
+        "date_commande": "2025-09-21",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 7425
+      },
+      {
+        "id": 147,
+        "client_id": 16,
+        "date_commande": "2025-04-26",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 2670
+      },
+      {
+        "id": 148,
+        "client_id": 19,
+        "date_commande": "2025-11-03",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 8915
+      },
+      {
+        "id": 149,
+        "client_id": 22,
+        "date_commande": "2025-06-08",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 2971
+      },
+      {
+        "id": 150,
+        "client_id": 1,
+        "date_commande": "2025-01-13",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 1500
+      },
+      {
+        "id": 151,
+        "client_id": 4,
+        "date_commande": "2025-08-18",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1615.5
+      },
+      {
+        "id": 152,
+        "client_id": 7,
+        "date_commande": "2025-03-23",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 9870
+      },
+      {
+        "id": 153,
+        "client_id": 10,
+        "date_commande": "2025-10-28",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 1420
+      },
+      {
+        "id": 154,
+        "client_id": 13,
+        "date_commande": "2025-05-05",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 525
+      },
+      {
+        "id": 155,
+        "client_id": 16,
+        "date_commande": "2025-12-10",
+        "statut": "ANNULEE",
+        "canal": "API_B2B",
+        "montant_total": 4610
+      },
+      {
+        "id": 156,
+        "client_id": 19,
+        "date_commande": "2025-07-15",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 8820
+      },
+      {
+        "id": 157,
+        "client_id": 22,
+        "date_commande": "2025-02-20",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2990
+      },
+      {
+        "id": 158,
+        "client_id": 1,
+        "date_commande": "2025-09-25",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 12040
+      },
+      {
+        "id": 159,
+        "client_id": 4,
+        "date_commande": "2025-04-02",
+        "statut": "EXPEDIEE",
+        "canal": "WEB",
+        "montant_total": 585
+      },
+      {
+        "id": 160,
+        "client_id": 7,
+        "date_commande": "2025-11-07",
+        "statut": "EN_ATTENTE",
+        "canal": "COMMERCIAL",
+        "montant_total": 1002
+      },
+      {
+        "id": 161,
+        "client_id": 11,
+        "date_commande": "2026-11-04",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 441
+      },
+      {
+        "id": 162,
+        "client_id": 14,
+        "date_commande": "2026-06-09",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 1320
+      },
+      {
+        "id": 163,
+        "client_id": 17,
+        "date_commande": "2026-01-14",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 4134
+      },
+      {
+        "id": 164,
+        "client_id": 20,
+        "date_commande": "2026-08-19",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 5560
+      },
+      {
+        "id": 165,
+        "client_id": 23,
+        "date_commande": "2026-03-24",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 830
+      },
+      {
+        "id": 166,
+        "client_id": 2,
+        "date_commande": "2026-10-01",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 14031
+      },
+      {
+        "id": 167,
+        "client_id": 5,
+        "date_commande": "2026-05-06",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 5400
+      },
+      {
+        "id": 168,
+        "client_id": 8,
+        "date_commande": "2026-12-11",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 1460
+      },
+      {
+        "id": 169,
+        "client_id": 11,
+        "date_commande": "2026-07-16",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 8820
+      },
+      {
+        "id": 170,
+        "client_id": 14,
+        "date_commande": "2026-02-21",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 190
+      },
+      {
+        "id": 171,
+        "client_id": 17,
+        "date_commande": "2026-09-26",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 2853
+      },
+      {
+        "id": 172,
+        "client_id": 20,
+        "date_commande": "2026-04-03",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 4320
+      },
+      {
+        "id": 173,
+        "client_id": 23,
+        "date_commande": "2026-11-08",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 310
+      },
+      {
+        "id": 174,
+        "client_id": 2,
+        "date_commande": "2026-06-13",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 3250
+      },
+      {
+        "id": 175,
+        "client_id": 5,
+        "date_commande": "2026-01-18",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 7630
+      },
+      {
+        "id": 176,
+        "client_id": 8,
+        "date_commande": "2026-08-23",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 882
+      },
+      {
+        "id": 177,
+        "client_id": 11,
+        "date_commande": "2026-03-28",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 3530
+      },
+      {
+        "id": 178,
+        "client_id": 14,
+        "date_commande": "2026-10-05",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2290
+      },
+      {
+        "id": 179,
+        "client_id": 17,
+        "date_commande": "2026-05-10",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 3360
+      },
+      {
+        "id": 180,
+        "client_id": 20,
+        "date_commande": "2026-12-15",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 7480
+      },
+      {
+        "id": 181,
+        "client_id": 23,
+        "date_commande": "2026-07-20",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 3298.5
+      },
+      {
+        "id": 182,
+        "client_id": 2,
+        "date_commande": "2026-02-25",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 580
+      },
+      {
+        "id": 183,
+        "client_id": 5,
+        "date_commande": "2026-09-02",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 7730
+      },
+      {
+        "id": 184,
+        "client_id": 8,
+        "date_commande": "2026-04-07",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 7850
+      },
+      {
+        "id": 185,
+        "client_id": 11,
+        "date_commande": "2026-11-12",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 490
+      },
+      {
+        "id": 186,
+        "client_id": 14,
+        "date_commande": "2026-06-17",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 1188
+      },
+      {
+        "id": 187,
+        "client_id": 17,
+        "date_commande": "2026-01-22",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 4134
+      },
+      {
+        "id": 188,
+        "client_id": 20,
+        "date_commande": "2026-08-27",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 5560
+      },
+      {
+        "id": 189,
+        "client_id": 23,
+        "date_commande": "2026-03-04",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 830
+      },
+      {
+        "id": 190,
+        "client_id": 2,
+        "date_commande": "2026-10-09",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 15590
+      },
+      {
+        "id": 191,
+        "client_id": 5,
+        "date_commande": "2026-05-14",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 4860
+      },
+      {
+        "id": 192,
+        "client_id": 8,
+        "date_commande": "2026-12-19",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 1460
+      },
+      {
+        "id": 193,
+        "client_id": 11,
+        "date_commande": "2026-07-24",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 8820
+      },
+      {
+        "id": 194,
+        "client_id": 14,
+        "date_commande": "2026-02-01",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 190
+      },
+      {
+        "id": 195,
+        "client_id": 17,
+        "date_commande": "2026-09-06",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 3170
+      },
+      {
+        "id": 196,
+        "client_id": 20,
+        "date_commande": "2026-04-11",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 3888
+      },
+      {
+        "id": 197,
+        "client_id": 23,
+        "date_commande": "2026-11-16",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 310
+      },
+      {
+        "id": 198,
+        "client_id": 2,
+        "date_commande": "2026-06-21",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 3250
+      },
+      {
+        "id": 199,
+        "client_id": 5,
+        "date_commande": "2026-01-26",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 7630
+      },
+      {
+        "id": 200,
+        "client_id": 8,
+        "date_commande": "2026-08-03",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 980
+      },
+      {
+        "id": 201,
+        "client_id": 11,
+        "date_commande": "2026-03-08",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 3177
+      },
+      {
+        "id": 202,
+        "client_id": 14,
+        "date_commande": "2026-10-13",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2290
+      },
+      {
+        "id": 203,
+        "client_id": 17,
+        "date_commande": "2026-05-18",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 3360
+      },
+      {
+        "id": 204,
+        "client_id": 20,
+        "date_commande": "2026-12-23",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 7480
+      },
+      {
+        "id": 205,
+        "client_id": 23,
+        "date_commande": "2026-07-28",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 3665
+      },
+      {
+        "id": 206,
+        "client_id": 2,
+        "date_commande": "2026-02-05",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 522
+      },
+      {
+        "id": 207,
+        "client_id": 5,
+        "date_commande": "2026-09-10",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 7730
+      },
+      {
+        "id": 208,
+        "client_id": 8,
+        "date_commande": "2026-04-15",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 7850
+      },
+      {
+        "id": 209,
+        "client_id": 11,
+        "date_commande": "2026-11-20",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 490
+      },
+      {
+        "id": 210,
+        "client_id": 14,
+        "date_commande": "2026-06-25",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 1320
+      },
+      {
+        "id": 211,
+        "client_id": 17,
+        "date_commande": "2026-01-02",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 3720.6
+      },
+      {
+        "id": 212,
+        "client_id": 20,
+        "date_commande": "2026-08-07",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 5560
+      },
+      {
+        "id": 213,
+        "client_id": 23,
+        "date_commande": "2026-03-12",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 830
+      },
+      {
+        "id": 214,
+        "client_id": 2,
+        "date_commande": "2026-10-17",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 15590
+      },
+      {
+        "id": 215,
+        "client_id": 5,
+        "date_commande": "2026-05-22",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 5400
+      },
+      {
+        "id": 216,
+        "client_id": 8,
+        "date_commande": "2026-12-27",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 1314
+      },
+      {
+        "id": 217,
+        "client_id": 11,
+        "date_commande": "2026-07-04",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 8820
+      },
+      {
+        "id": 218,
+        "client_id": 14,
+        "date_commande": "2026-02-09",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 190
+      },
+      {
+        "id": 219,
+        "client_id": 17,
+        "date_commande": "2026-09-14",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 3170
+      },
+      {
+        "id": 220,
+        "client_id": 20,
+        "date_commande": "2026-04-19",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 4320
+      },
+      {
+        "id": 221,
+        "client_id": 23,
+        "date_commande": "2026-11-24",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 279
+      },
+      {
+        "id": 222,
+        "client_id": 2,
+        "date_commande": "2026-06-01",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 3250
+      },
+      {
+        "id": 223,
+        "client_id": 5,
+        "date_commande": "2026-01-06",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 7630
+      },
+      {
+        "id": 224,
+        "client_id": 8,
+        "date_commande": "2026-08-11",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 980
+      },
+      {
+        "id": 225,
+        "client_id": 11,
+        "date_commande": "2026-03-16",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 3530
+      },
+      {
+        "id": 226,
+        "client_id": 14,
+        "date_commande": "2026-10-21",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 2061
+      },
+      {
+        "id": 227,
+        "client_id": 17,
+        "date_commande": "2026-05-26",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 3360
+      },
+      {
+        "id": 228,
+        "client_id": 20,
+        "date_commande": "2026-12-03",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 7480
+      },
+      {
+        "id": 229,
+        "client_id": 23,
+        "date_commande": "2026-07-08",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 3665
+      },
+      {
+        "id": 230,
+        "client_id": 2,
+        "date_commande": "2026-02-13",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 580
+      },
+      {
+        "id": 231,
+        "client_id": 5,
+        "date_commande": "2026-09-18",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 6957
+      },
+      {
+        "id": 232,
+        "client_id": 8,
+        "date_commande": "2026-04-23",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 7850
+      },
+      {
+        "id": 233,
+        "client_id": 11,
+        "date_commande": "2026-11-28",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 490
+      },
+      {
+        "id": 234,
+        "client_id": 14,
+        "date_commande": "2026-06-05",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 1320
+      },
+      {
+        "id": 235,
+        "client_id": 17,
+        "date_commande": "2026-01-10",
+        "statut": "LIVREE",
+        "canal": "COMMERCIAL",
+        "montant_total": 4134
+      },
+      {
+        "id": 236,
+        "client_id": 20,
+        "date_commande": "2026-08-15",
+        "statut": "LIVREE",
+        "canal": "API_B2B",
+        "montant_total": 5004
+      },
+      {
+        "id": 237,
+        "client_id": 23,
+        "date_commande": "2026-03-20",
+        "statut": "LIVREE",
+        "canal": "WEB",
+        "montant_total": 830
+      },
+      {
+        "id": 238,
+        "client_id": 2,
+        "date_commande": "2026-10-25",
+        "statut": "EXPEDIEE",
+        "canal": "COMMERCIAL",
+        "montant_total": 15590
+      },
+      {
+        "id": 239,
+        "client_id": 5,
+        "date_commande": "2026-05-02",
+        "statut": "EN_ATTENTE",
+        "canal": "API_B2B",
+        "montant_total": 5400
+      },
+      {
+        "id": 240,
+        "client_id": 8,
+        "date_commande": "2026-12-07",
+        "statut": "ANNULEE",
+        "canal": "WEB",
+        "montant_total": 1460
+      }
+    ],
+    "lignes_commande": [
+      {
+        "id": 1,
+        "commande_id": 1,
+        "produit_id": 9,
+        "quantite": 1,
+        "prix_unitaire_applique": 1962
+      },
+      {
+        "id": 2,
+        "commande_id": 2,
+        "produit_id": 14,
+        "quantite": 2,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 3,
+        "commande_id": 2,
+        "produit_id": 21,
+        "quantite": 3,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 4,
+        "commande_id": 3,
+        "produit_id": 19,
+        "quantite": 3,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 5,
+        "commande_id": 3,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 6,
+        "commande_id": 3,
+        "produit_id": 9,
+        "quantite": 1,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 7,
+        "commande_id": 4,
+        "produit_id": 24,
+        "quantite": 4,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 8,
+        "commande_id": 5,
+        "produit_id": 5,
+        "quantite": 1,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 9,
+        "commande_id": 5,
+        "produit_id": 12,
+        "quantite": 2,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 10,
+        "commande_id": 6,
+        "produit_id": 10,
+        "quantite": 2,
+        "prix_unitaire_applique": 1278
+      },
+      {
+        "id": 11,
+        "commande_id": 6,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1620
+      },
+      {
+        "id": 12,
+        "commande_id": 6,
+        "produit_id": 24,
+        "quantite": 4,
+        "prix_unitaire_applique": 130.5
+      },
+      {
+        "id": 13,
+        "commande_id": 7,
+        "produit_id": 15,
+        "quantite": 3,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 14,
+        "commande_id": 8,
+        "produit_id": 20,
+        "quantite": 4,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 15,
+        "commande_id": 8,
+        "produit_id": 3,
+        "quantite": 1,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 16,
+        "commande_id": 9,
+        "produit_id": 1,
+        "quantite": 1,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 17,
+        "commande_id": 9,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 18,
+        "commande_id": 9,
+        "produit_id": 15,
+        "quantite": 3,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 19,
+        "commande_id": 10,
+        "produit_id": 6,
+        "quantite": 2,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 20,
+        "commande_id": 11,
+        "produit_id": 11,
+        "quantite": 3,
+        "prix_unitaire_applique": 441
+      },
+      {
+        "id": 21,
+        "commande_id": 11,
+        "produit_id": 18,
+        "quantite": 4,
+        "prix_unitaire_applique": 378
+      },
+      {
+        "id": 22,
+        "commande_id": 12,
+        "produit_id": 16,
+        "quantite": 4,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 23,
+        "commande_id": 12,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 24,
+        "commande_id": 12,
+        "produit_id": 6,
+        "quantite": 2,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 25,
+        "commande_id": 13,
+        "produit_id": 21,
+        "quantite": 1,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 26,
+        "commande_id": 14,
+        "produit_id": 2,
+        "quantite": 2,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 27,
+        "commande_id": 14,
+        "produit_id": 9,
+        "quantite": 3,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 28,
+        "commande_id": 15,
+        "produit_id": 7,
+        "quantite": 3,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 29,
+        "commande_id": 15,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 30,
+        "commande_id": 15,
+        "produit_id": 21,
+        "quantite": 1,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 31,
+        "commande_id": 16,
+        "produit_id": 12,
+        "quantite": 4,
+        "prix_unitaire_applique": 3501
+      },
+      {
+        "id": 32,
+        "commande_id": 17,
+        "produit_id": 17,
+        "quantite": 1,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 33,
+        "commande_id": 17,
+        "produit_id": 24,
+        "quantite": 2,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 34,
+        "commande_id": 18,
+        "produit_id": 22,
+        "quantite": 2,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 35,
+        "commande_id": 18,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 36,
+        "commande_id": 18,
+        "produit_id": 12,
+        "quantite": 4,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 37,
+        "commande_id": 19,
+        "produit_id": 3,
+        "quantite": 3,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 38,
+        "commande_id": 20,
+        "produit_id": 8,
+        "quantite": 4,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 39,
+        "commande_id": 20,
+        "produit_id": 15,
+        "quantite": 1,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 40,
+        "commande_id": 21,
+        "produit_id": 13,
+        "quantite": 1,
+        "prix_unitaire_applique": 603
+      },
+      {
+        "id": 41,
+        "commande_id": 21,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 261
+      },
+      {
+        "id": 42,
+        "commande_id": 21,
+        "produit_id": 3,
+        "quantite": 3,
+        "prix_unitaire_applique": 522
+      },
+      {
+        "id": 43,
+        "commande_id": 22,
+        "produit_id": 18,
+        "quantite": 2,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 44,
+        "commande_id": 23,
+        "produit_id": 23,
+        "quantite": 3,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 45,
+        "commande_id": 23,
+        "produit_id": 6,
+        "quantite": 4,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 46,
+        "commande_id": 24,
+        "produit_id": 4,
+        "quantite": 4,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 47,
+        "commande_id": 24,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 48,
+        "commande_id": 24,
+        "produit_id": 18,
+        "quantite": 2,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 49,
+        "commande_id": 25,
+        "produit_id": 9,
+        "quantite": 1,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 50,
+        "commande_id": 26,
+        "produit_id": 14,
+        "quantite": 2,
+        "prix_unitaire_applique": 220.5
+      },
+      {
+        "id": 51,
+        "commande_id": 26,
+        "produit_id": 21,
+        "quantite": 3,
+        "prix_unitaire_applique": 25.2
+      },
+      {
+        "id": 52,
+        "commande_id": 27,
+        "produit_id": 19,
+        "quantite": 3,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 53,
+        "commande_id": 27,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 54,
+        "commande_id": 27,
+        "produit_id": 9,
+        "quantite": 1,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 55,
+        "commande_id": 28,
+        "produit_id": 24,
+        "quantite": 4,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 56,
+        "commande_id": 29,
+        "produit_id": 5,
+        "quantite": 1,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 57,
+        "commande_id": 29,
+        "produit_id": 12,
+        "quantite": 2,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 58,
+        "commande_id": 30,
+        "produit_id": 10,
+        "quantite": 2,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 59,
+        "commande_id": 30,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 60,
+        "commande_id": 30,
+        "produit_id": 24,
+        "quantite": 4,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 61,
+        "commande_id": 31,
+        "produit_id": 15,
+        "quantite": 3,
+        "prix_unitaire_applique": 121.5
+      },
+      {
+        "id": 62,
+        "commande_id": 32,
+        "produit_id": 20,
+        "quantite": 4,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 63,
+        "commande_id": 32,
+        "produit_id": 3,
+        "quantite": 1,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 64,
+        "commande_id": 33,
+        "produit_id": 1,
+        "quantite": 1,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 65,
+        "commande_id": 33,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 66,
+        "commande_id": 33,
+        "produit_id": 15,
+        "quantite": 3,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 67,
+        "commande_id": 34,
+        "produit_id": 6,
+        "quantite": 2,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 68,
+        "commande_id": 35,
+        "produit_id": 11,
+        "quantite": 3,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 69,
+        "commande_id": 35,
+        "produit_id": 18,
+        "quantite": 4,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 70,
+        "commande_id": 36,
+        "produit_id": 16,
+        "quantite": 4,
+        "prix_unitaire_applique": 175.5
+      },
+      {
+        "id": 71,
+        "commande_id": 36,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 279
+      },
+      {
+        "id": 72,
+        "commande_id": 36,
+        "produit_id": 6,
+        "quantite": 2,
+        "prix_unitaire_applique": 1485
+      },
+      {
+        "id": 73,
+        "commande_id": 37,
+        "produit_id": 21,
+        "quantite": 1,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 74,
+        "commande_id": 38,
+        "produit_id": 2,
+        "quantite": 2,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 75,
+        "commande_id": 38,
+        "produit_id": 9,
+        "quantite": 3,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 76,
+        "commande_id": 39,
+        "produit_id": 7,
+        "quantite": 3,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 77,
+        "commande_id": 39,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 78,
+        "commande_id": 39,
+        "produit_id": 21,
+        "quantite": 1,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 79,
+        "commande_id": 40,
+        "produit_id": 12,
+        "quantite": 4,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 80,
+        "commande_id": 41,
+        "produit_id": 17,
+        "quantite": 1,
+        "prix_unitaire_applique": 1620
+      },
+      {
+        "id": 81,
+        "commande_id": 41,
+        "produit_id": 24,
+        "quantite": 2,
+        "prix_unitaire_applique": 130.5
+      },
+      {
+        "id": 82,
+        "commande_id": 42,
+        "produit_id": 22,
+        "quantite": 2,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 83,
+        "commande_id": 42,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 84,
+        "commande_id": 42,
+        "produit_id": 12,
+        "quantite": 4,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 85,
+        "commande_id": 43,
+        "produit_id": 3,
+        "quantite": 3,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 86,
+        "commande_id": 44,
+        "produit_id": 8,
+        "quantite": 4,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 87,
+        "commande_id": 44,
+        "produit_id": 15,
+        "quantite": 1,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 88,
+        "commande_id": 45,
+        "produit_id": 13,
+        "quantite": 1,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 89,
+        "commande_id": 45,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 90,
+        "commande_id": 45,
+        "produit_id": 3,
+        "quantite": 3,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 91,
+        "commande_id": 46,
+        "produit_id": 18,
+        "quantite": 2,
+        "prix_unitaire_applique": 378
+      },
+      {
+        "id": 92,
+        "commande_id": 47,
+        "produit_id": 23,
+        "quantite": 3,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 93,
+        "commande_id": 47,
+        "produit_id": 6,
+        "quantite": 4,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 94,
+        "commande_id": 48,
+        "produit_id": 4,
+        "quantite": 4,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 95,
+        "commande_id": 48,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 96,
+        "commande_id": 48,
+        "produit_id": 18,
+        "quantite": 2,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 97,
+        "commande_id": 49,
+        "produit_id": 9,
+        "quantite": 1,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 98,
+        "commande_id": 50,
+        "produit_id": 14,
+        "quantite": 2,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 99,
+        "commande_id": 50,
+        "produit_id": 21,
+        "quantite": 3,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 100,
+        "commande_id": 51,
+        "produit_id": 19,
+        "quantite": 3,
+        "prix_unitaire_applique": 675
+      },
+      {
+        "id": 101,
+        "commande_id": 51,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1251
+      },
+      {
+        "id": 102,
+        "commande_id": 51,
+        "produit_id": 9,
+        "quantite": 1,
+        "prix_unitaire_applique": 1962
+      },
+      {
+        "id": 103,
+        "commande_id": 52,
+        "produit_id": 24,
+        "quantite": 4,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 104,
+        "commande_id": 53,
+        "produit_id": 5,
+        "quantite": 1,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 105,
+        "commande_id": 53,
+        "produit_id": 12,
+        "quantite": 2,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 106,
+        "commande_id": 54,
+        "produit_id": 10,
+        "quantite": 2,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 107,
+        "commande_id": 54,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 108,
+        "commande_id": 54,
+        "produit_id": 24,
+        "quantite": 4,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 109,
+        "commande_id": 55,
+        "produit_id": 15,
+        "quantite": 3,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 110,
+        "commande_id": 56,
+        "produit_id": 20,
+        "quantite": 4,
+        "prix_unitaire_applique": 261
+      },
+      {
+        "id": 111,
+        "commande_id": 56,
+        "produit_id": 3,
+        "quantite": 1,
+        "prix_unitaire_applique": 522
+      },
+      {
+        "id": 112,
+        "commande_id": 57,
+        "produit_id": 1,
+        "quantite": 1,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 113,
+        "commande_id": 57,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 114,
+        "commande_id": 57,
+        "produit_id": 15,
+        "quantite": 3,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 115,
+        "commande_id": 58,
+        "produit_id": 6,
+        "quantite": 2,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 116,
+        "commande_id": 59,
+        "produit_id": 11,
+        "quantite": 3,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 117,
+        "commande_id": 59,
+        "produit_id": 18,
+        "quantite": 4,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 118,
+        "commande_id": 60,
+        "produit_id": 16,
+        "quantite": 4,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 119,
+        "commande_id": 60,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 120,
+        "commande_id": 60,
+        "produit_id": 6,
+        "quantite": 2,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 121,
+        "commande_id": 61,
+        "produit_id": 21,
+        "quantite": 1,
+        "prix_unitaire_applique": 25.2
+      },
+      {
+        "id": 122,
+        "commande_id": 62,
+        "produit_id": 2,
+        "quantite": 2,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 123,
+        "commande_id": 62,
+        "produit_id": 9,
+        "quantite": 3,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 124,
+        "commande_id": 63,
+        "produit_id": 7,
+        "quantite": 3,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 125,
+        "commande_id": 63,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 126,
+        "commande_id": 63,
+        "produit_id": 21,
+        "quantite": 1,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 127,
+        "commande_id": 64,
+        "produit_id": 12,
+        "quantite": 4,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 128,
+        "commande_id": 65,
+        "produit_id": 17,
+        "quantite": 1,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 129,
+        "commande_id": 65,
+        "produit_id": 24,
+        "quantite": 2,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 130,
+        "commande_id": 66,
+        "produit_id": 22,
+        "quantite": 2,
+        "prix_unitaire_applique": 76.5
+      },
+      {
+        "id": 131,
+        "commande_id": 66,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1008
+      },
+      {
+        "id": 132,
+        "commande_id": 66,
+        "produit_id": 12,
+        "quantite": 4,
+        "prix_unitaire_applique": 3501
+      },
+      {
+        "id": 133,
+        "commande_id": 67,
+        "produit_id": 3,
+        "quantite": 3,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 134,
+        "commande_id": 68,
+        "produit_id": 8,
+        "quantite": 4,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 135,
+        "commande_id": 68,
+        "produit_id": 15,
+        "quantite": 1,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 136,
+        "commande_id": 69,
+        "produit_id": 13,
+        "quantite": 1,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 137,
+        "commande_id": 69,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 138,
+        "commande_id": 69,
+        "produit_id": 3,
+        "quantite": 3,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 139,
+        "commande_id": 70,
+        "produit_id": 18,
+        "quantite": 2,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 140,
+        "commande_id": 71,
+        "produit_id": 23,
+        "quantite": 3,
+        "prix_unitaire_applique": 279
+      },
+      {
+        "id": 141,
+        "commande_id": 71,
+        "produit_id": 6,
+        "quantite": 4,
+        "prix_unitaire_applique": 1485
+      },
+      {
+        "id": 142,
+        "commande_id": 72,
+        "produit_id": 4,
+        "quantite": 4,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 143,
+        "commande_id": 72,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 144,
+        "commande_id": 72,
+        "produit_id": 18,
+        "quantite": 2,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 145,
+        "commande_id": 73,
+        "produit_id": 9,
+        "quantite": 1,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 146,
+        "commande_id": 74,
+        "produit_id": 14,
+        "quantite": 2,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 147,
+        "commande_id": 74,
+        "produit_id": 21,
+        "quantite": 3,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 148,
+        "commande_id": 75,
+        "produit_id": 19,
+        "quantite": 3,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 149,
+        "commande_id": 75,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 150,
+        "commande_id": 75,
+        "produit_id": 9,
+        "quantite": 1,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 151,
+        "commande_id": 76,
+        "produit_id": 24,
+        "quantite": 4,
+        "prix_unitaire_applique": 130.5
+      },
+      {
+        "id": 152,
+        "commande_id": 77,
+        "produit_id": 5,
+        "quantite": 1,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 153,
+        "commande_id": 77,
+        "produit_id": 12,
+        "quantite": 2,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 154,
+        "commande_id": 78,
+        "produit_id": 10,
+        "quantite": 2,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 155,
+        "commande_id": 78,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 156,
+        "commande_id": 78,
+        "produit_id": 24,
+        "quantite": 4,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 157,
+        "commande_id": 79,
+        "produit_id": 15,
+        "quantite": 3,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 158,
+        "commande_id": 80,
+        "produit_id": 20,
+        "quantite": 4,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 159,
+        "commande_id": 80,
+        "produit_id": 3,
+        "quantite": 1,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 160,
+        "commande_id": 81,
+        "produit_id": 10,
+        "quantite": 1,
+        "prix_unitaire_applique": 1278
+      },
+      {
+        "id": 161,
+        "commande_id": 82,
+        "produit_id": 15,
+        "quantite": 2,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 162,
+        "commande_id": 82,
+        "produit_id": 22,
+        "quantite": 3,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 163,
+        "commande_id": 83,
+        "produit_id": 20,
+        "quantite": 3,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 164,
+        "commande_id": 83,
+        "produit_id": 3,
+        "quantite": 4,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 165,
+        "commande_id": 83,
+        "produit_id": 10,
+        "quantite": 1,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 166,
+        "commande_id": 84,
+        "produit_id": 1,
+        "quantite": 4,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 167,
+        "commande_id": 85,
+        "produit_id": 6,
+        "quantite": 1,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 168,
+        "commande_id": 85,
+        "produit_id": 13,
+        "quantite": 2,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 169,
+        "commande_id": 86,
+        "produit_id": 11,
+        "quantite": 2,
+        "prix_unitaire_applique": 441
+      },
+      {
+        "id": 170,
+        "commande_id": 86,
+        "produit_id": 18,
+        "quantite": 3,
+        "prix_unitaire_applique": 378
+      },
+      {
+        "id": 171,
+        "commande_id": 86,
+        "produit_id": 1,
+        "quantite": 4,
+        "prix_unitaire_applique": 2205
+      },
+      {
+        "id": 172,
+        "commande_id": 87,
+        "produit_id": 16,
+        "quantite": 3,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 173,
+        "commande_id": 88,
+        "produit_id": 21,
+        "quantite": 4,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 174,
+        "commande_id": 88,
+        "produit_id": 4,
+        "quantite": 1,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 175,
+        "commande_id": 89,
+        "produit_id": 2,
+        "quantite": 1,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 176,
+        "commande_id": 89,
+        "produit_id": 9,
+        "quantite": 2,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 177,
+        "commande_id": 89,
+        "produit_id": 16,
+        "quantite": 3,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 178,
+        "commande_id": 90,
+        "produit_id": 7,
+        "quantite": 2,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 179,
+        "commande_id": 91,
+        "produit_id": 12,
+        "quantite": 3,
+        "prix_unitaire_applique": 3501
+      },
+      {
+        "id": 180,
+        "commande_id": 91,
+        "produit_id": 19,
+        "quantite": 4,
+        "prix_unitaire_applique": 675
+      },
+      {
+        "id": 181,
+        "commande_id": 92,
+        "produit_id": 17,
+        "quantite": 4,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 182,
+        "commande_id": 92,
+        "produit_id": 24,
+        "quantite": 1,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 183,
+        "commande_id": 92,
+        "produit_id": 7,
+        "quantite": 2,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 184,
+        "commande_id": 93,
+        "produit_id": 22,
+        "quantite": 1,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 185,
+        "commande_id": 94,
+        "produit_id": 3,
+        "quantite": 2,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 186,
+        "commande_id": 94,
+        "produit_id": 10,
+        "quantite": 3,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 187,
+        "commande_id": 95,
+        "produit_id": 8,
+        "quantite": 3,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 188,
+        "commande_id": 95,
+        "produit_id": 15,
+        "quantite": 4,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 189,
+        "commande_id": 95,
+        "produit_id": 22,
+        "quantite": 1,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 190,
+        "commande_id": 96,
+        "produit_id": 13,
+        "quantite": 4,
+        "prix_unitaire_applique": 603
+      },
+      {
+        "id": 191,
+        "commande_id": 97,
+        "produit_id": 18,
+        "quantite": 1,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 192,
+        "commande_id": 97,
+        "produit_id": 1,
+        "quantite": 2,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 193,
+        "commande_id": 98,
+        "produit_id": 23,
+        "quantite": 2,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 194,
+        "commande_id": 98,
+        "produit_id": 6,
+        "quantite": 3,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 195,
+        "commande_id": 98,
+        "produit_id": 13,
+        "quantite": 4,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 196,
+        "commande_id": 99,
+        "produit_id": 4,
+        "quantite": 3,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 197,
+        "commande_id": 100,
+        "produit_id": 9,
+        "quantite": 4,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 198,
+        "commande_id": 100,
+        "produit_id": 16,
+        "quantite": 1,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 199,
+        "commande_id": 101,
+        "produit_id": 14,
+        "quantite": 1,
+        "prix_unitaire_applique": 220.5
+      },
+      {
+        "id": 200,
+        "commande_id": 101,
+        "produit_id": 21,
+        "quantite": 2,
+        "prix_unitaire_applique": 25.2
+      },
+      {
+        "id": 201,
+        "commande_id": 101,
+        "produit_id": 4,
+        "quantite": 3,
+        "prix_unitaire_applique": 801
+      },
+      {
+        "id": 202,
+        "commande_id": 102,
+        "produit_id": 19,
+        "quantite": 2,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 203,
+        "commande_id": 103,
+        "produit_id": 24,
+        "quantite": 3,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 204,
+        "commande_id": 103,
+        "produit_id": 7,
+        "quantite": 4,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 205,
+        "commande_id": 104,
+        "produit_id": 5,
+        "quantite": 4,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 206,
+        "commande_id": 104,
+        "produit_id": 12,
+        "quantite": 1,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 207,
+        "commande_id": 104,
+        "produit_id": 19,
+        "quantite": 2,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 208,
+        "commande_id": 105,
+        "produit_id": 10,
+        "quantite": 1,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 209,
+        "commande_id": 106,
+        "produit_id": 15,
+        "quantite": 2,
+        "prix_unitaire_applique": 121.5
+      },
+      {
+        "id": 210,
+        "commande_id": 106,
+        "produit_id": 22,
+        "quantite": 3,
+        "prix_unitaire_applique": 76.5
+      },
+      {
+        "id": 211,
+        "commande_id": 107,
+        "produit_id": 20,
+        "quantite": 3,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 212,
+        "commande_id": 107,
+        "produit_id": 3,
+        "quantite": 4,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 213,
+        "commande_id": 107,
+        "produit_id": 10,
+        "quantite": 1,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 214,
+        "commande_id": 108,
+        "produit_id": 1,
+        "quantite": 4,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 215,
+        "commande_id": 109,
+        "produit_id": 6,
+        "quantite": 1,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 216,
+        "commande_id": 109,
+        "produit_id": 13,
+        "quantite": 2,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 217,
+        "commande_id": 110,
+        "produit_id": 11,
+        "quantite": 2,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 218,
+        "commande_id": 110,
+        "produit_id": 18,
+        "quantite": 3,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 219,
+        "commande_id": 110,
+        "produit_id": 1,
+        "quantite": 4,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 220,
+        "commande_id": 111,
+        "produit_id": 16,
+        "quantite": 3,
+        "prix_unitaire_applique": 175.5
+      },
+      {
+        "id": 221,
+        "commande_id": 112,
+        "produit_id": 21,
+        "quantite": 4,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 222,
+        "commande_id": 112,
+        "produit_id": 4,
+        "quantite": 1,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 223,
+        "commande_id": 113,
+        "produit_id": 2,
+        "quantite": 1,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 224,
+        "commande_id": 113,
+        "produit_id": 9,
+        "quantite": 2,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 225,
+        "commande_id": 113,
+        "produit_id": 16,
+        "quantite": 3,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 226,
+        "commande_id": 114,
+        "produit_id": 7,
+        "quantite": 2,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 227,
+        "commande_id": 115,
+        "produit_id": 12,
+        "quantite": 3,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 228,
+        "commande_id": 115,
+        "produit_id": 19,
+        "quantite": 4,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 229,
+        "commande_id": 116,
+        "produit_id": 17,
+        "quantite": 4,
+        "prix_unitaire_applique": 1620
+      },
+      {
+        "id": 230,
+        "commande_id": 116,
+        "produit_id": 24,
+        "quantite": 1,
+        "prix_unitaire_applique": 130.5
+      },
+      {
+        "id": 231,
+        "commande_id": 116,
+        "produit_id": 7,
+        "quantite": 2,
+        "prix_unitaire_applique": 306
+      },
+      {
+        "id": 232,
+        "commande_id": 117,
+        "produit_id": 22,
+        "quantite": 1,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 233,
+        "commande_id": 118,
+        "produit_id": 3,
+        "quantite": 2,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 234,
+        "commande_id": 118,
+        "produit_id": 10,
+        "quantite": 3,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 235,
+        "commande_id": 119,
+        "produit_id": 8,
+        "quantite": 3,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 236,
+        "commande_id": 119,
+        "produit_id": 15,
+        "quantite": 4,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 237,
+        "commande_id": 119,
+        "produit_id": 22,
+        "quantite": 1,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 238,
+        "commande_id": 120,
+        "produit_id": 13,
+        "quantite": 4,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 239,
+        "commande_id": 121,
+        "produit_id": 18,
+        "quantite": 1,
+        "prix_unitaire_applique": 378
+      },
+      {
+        "id": 240,
+        "commande_id": 121,
+        "produit_id": 1,
+        "quantite": 2,
+        "prix_unitaire_applique": 2205
+      },
+      {
+        "id": 241,
+        "commande_id": 122,
+        "produit_id": 23,
+        "quantite": 2,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 242,
+        "commande_id": 122,
+        "produit_id": 6,
+        "quantite": 3,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 243,
+        "commande_id": 122,
+        "produit_id": 13,
+        "quantite": 4,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 244,
+        "commande_id": 123,
+        "produit_id": 4,
+        "quantite": 3,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 245,
+        "commande_id": 124,
+        "produit_id": 9,
+        "quantite": 4,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 246,
+        "commande_id": 124,
+        "produit_id": 16,
+        "quantite": 1,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 247,
+        "commande_id": 125,
+        "produit_id": 14,
+        "quantite": 1,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 248,
+        "commande_id": 125,
+        "produit_id": 21,
+        "quantite": 2,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 249,
+        "commande_id": 125,
+        "produit_id": 4,
+        "quantite": 3,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 250,
+        "commande_id": 126,
+        "produit_id": 19,
+        "quantite": 2,
+        "prix_unitaire_applique": 675
+      },
+      {
+        "id": 251,
+        "commande_id": 127,
+        "produit_id": 24,
+        "quantite": 3,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 252,
+        "commande_id": 127,
+        "produit_id": 7,
+        "quantite": 4,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 253,
+        "commande_id": 128,
+        "produit_id": 5,
+        "quantite": 4,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 254,
+        "commande_id": 128,
+        "produit_id": 12,
+        "quantite": 1,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 255,
+        "commande_id": 128,
+        "produit_id": 19,
+        "quantite": 2,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 256,
+        "commande_id": 129,
+        "produit_id": 10,
+        "quantite": 1,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 257,
+        "commande_id": 130,
+        "produit_id": 15,
+        "quantite": 2,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 258,
+        "commande_id": 130,
+        "produit_id": 22,
+        "quantite": 3,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 259,
+        "commande_id": 131,
+        "produit_id": 20,
+        "quantite": 3,
+        "prix_unitaire_applique": 261
+      },
+      {
+        "id": 260,
+        "commande_id": 131,
+        "produit_id": 3,
+        "quantite": 4,
+        "prix_unitaire_applique": 522
+      },
+      {
+        "id": 261,
+        "commande_id": 131,
+        "produit_id": 10,
+        "quantite": 1,
+        "prix_unitaire_applique": 1278
+      },
+      {
+        "id": 262,
+        "commande_id": 132,
+        "produit_id": 1,
+        "quantite": 4,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 263,
+        "commande_id": 133,
+        "produit_id": 6,
+        "quantite": 1,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 264,
+        "commande_id": 133,
+        "produit_id": 13,
+        "quantite": 2,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 265,
+        "commande_id": 134,
+        "produit_id": 11,
+        "quantite": 2,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 266,
+        "commande_id": 134,
+        "produit_id": 18,
+        "quantite": 3,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 267,
+        "commande_id": 134,
+        "produit_id": 1,
+        "quantite": 4,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 268,
+        "commande_id": 135,
+        "produit_id": 16,
+        "quantite": 3,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 269,
+        "commande_id": 136,
+        "produit_id": 21,
+        "quantite": 4,
+        "prix_unitaire_applique": 25.2
+      },
+      {
+        "id": 270,
+        "commande_id": 136,
+        "produit_id": 4,
+        "quantite": 1,
+        "prix_unitaire_applique": 801
+      },
+      {
+        "id": 271,
+        "commande_id": 137,
+        "produit_id": 2,
+        "quantite": 1,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 272,
+        "commande_id": 137,
+        "produit_id": 9,
+        "quantite": 2,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 273,
+        "commande_id": 137,
+        "produit_id": 16,
+        "quantite": 3,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 274,
+        "commande_id": 138,
+        "produit_id": 7,
+        "quantite": 2,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 275,
+        "commande_id": 139,
+        "produit_id": 12,
+        "quantite": 3,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 276,
+        "commande_id": 139,
+        "produit_id": 19,
+        "quantite": 4,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 277,
+        "commande_id": 140,
+        "produit_id": 17,
+        "quantite": 4,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 278,
+        "commande_id": 140,
+        "produit_id": 24,
+        "quantite": 1,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 279,
+        "commande_id": 140,
+        "produit_id": 7,
+        "quantite": 2,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 280,
+        "commande_id": 141,
+        "produit_id": 22,
+        "quantite": 1,
+        "prix_unitaire_applique": 76.5
+      },
+      {
+        "id": 281,
+        "commande_id": 142,
+        "produit_id": 3,
+        "quantite": 2,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 282,
+        "commande_id": 142,
+        "produit_id": 10,
+        "quantite": 3,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 283,
+        "commande_id": 143,
+        "produit_id": 8,
+        "quantite": 3,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 284,
+        "commande_id": 143,
+        "produit_id": 15,
+        "quantite": 4,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 285,
+        "commande_id": 143,
+        "produit_id": 22,
+        "quantite": 1,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 286,
+        "commande_id": 144,
+        "produit_id": 13,
+        "quantite": 4,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 287,
+        "commande_id": 145,
+        "produit_id": 18,
+        "quantite": 1,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 288,
+        "commande_id": 145,
+        "produit_id": 1,
+        "quantite": 2,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 289,
+        "commande_id": 146,
+        "produit_id": 23,
+        "quantite": 2,
+        "prix_unitaire_applique": 279
+      },
+      {
+        "id": 290,
+        "commande_id": 146,
+        "produit_id": 6,
+        "quantite": 3,
+        "prix_unitaire_applique": 1485
+      },
+      {
+        "id": 291,
+        "commande_id": 146,
+        "produit_id": 13,
+        "quantite": 4,
+        "prix_unitaire_applique": 603
+      },
+      {
+        "id": 292,
+        "commande_id": 147,
+        "produit_id": 4,
+        "quantite": 3,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 293,
+        "commande_id": 148,
+        "produit_id": 9,
+        "quantite": 4,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 294,
+        "commande_id": 148,
+        "produit_id": 16,
+        "quantite": 1,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 295,
+        "commande_id": 149,
+        "produit_id": 14,
+        "quantite": 1,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 296,
+        "commande_id": 149,
+        "produit_id": 21,
+        "quantite": 2,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 297,
+        "commande_id": 149,
+        "produit_id": 4,
+        "quantite": 3,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 298,
+        "commande_id": 150,
+        "produit_id": 19,
+        "quantite": 2,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 299,
+        "commande_id": 151,
+        "produit_id": 24,
+        "quantite": 3,
+        "prix_unitaire_applique": 130.5
+      },
+      {
+        "id": 300,
+        "commande_id": 151,
+        "produit_id": 7,
+        "quantite": 4,
+        "prix_unitaire_applique": 306
+      },
+      {
+        "id": 301,
+        "commande_id": 152,
+        "produit_id": 5,
+        "quantite": 4,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 302,
+        "commande_id": 152,
+        "produit_id": 12,
+        "quantite": 1,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 303,
+        "commande_id": 152,
+        "produit_id": 19,
+        "quantite": 2,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 304,
+        "commande_id": 153,
+        "produit_id": 10,
+        "quantite": 1,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 305,
+        "commande_id": 154,
+        "produit_id": 15,
+        "quantite": 2,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 306,
+        "commande_id": 154,
+        "produit_id": 22,
+        "quantite": 3,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 307,
+        "commande_id": 155,
+        "produit_id": 20,
+        "quantite": 3,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 308,
+        "commande_id": 155,
+        "produit_id": 3,
+        "quantite": 4,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 309,
+        "commande_id": 155,
+        "produit_id": 10,
+        "quantite": 1,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 310,
+        "commande_id": 156,
+        "produit_id": 1,
+        "quantite": 4,
+        "prix_unitaire_applique": 2205
+      },
+      {
+        "id": 311,
+        "commande_id": 157,
+        "produit_id": 6,
+        "quantite": 1,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 312,
+        "commande_id": 157,
+        "produit_id": 13,
+        "quantite": 2,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 313,
+        "commande_id": 158,
+        "produit_id": 11,
+        "quantite": 2,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 314,
+        "commande_id": 158,
+        "produit_id": 18,
+        "quantite": 3,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 315,
+        "commande_id": 158,
+        "produit_id": 1,
+        "quantite": 4,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 316,
+        "commande_id": 159,
+        "produit_id": 16,
+        "quantite": 3,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 317,
+        "commande_id": 160,
+        "produit_id": 21,
+        "quantite": 4,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 318,
+        "commande_id": 160,
+        "produit_id": 4,
+        "quantite": 1,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 319,
+        "commande_id": 161,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 441
+      },
+      {
+        "id": 320,
+        "commande_id": 162,
+        "produit_id": 16,
+        "quantite": 2,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 321,
+        "commande_id": 162,
+        "produit_id": 23,
+        "quantite": 3,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 322,
+        "commande_id": 163,
+        "produit_id": 21,
+        "quantite": 3,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 323,
+        "commande_id": 163,
+        "produit_id": 4,
+        "quantite": 4,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 324,
+        "commande_id": 163,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 325,
+        "commande_id": 164,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 326,
+        "commande_id": 165,
+        "produit_id": 7,
+        "quantite": 1,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 327,
+        "commande_id": 165,
+        "produit_id": 14,
+        "quantite": 2,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 328,
+        "commande_id": 166,
+        "produit_id": 12,
+        "quantite": 2,
+        "prix_unitaire_applique": 3501
+      },
+      {
+        "id": 329,
+        "commande_id": 166,
+        "produit_id": 19,
+        "quantite": 3,
+        "prix_unitaire_applique": 675
+      },
+      {
+        "id": 330,
+        "commande_id": 166,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1251
+      },
+      {
+        "id": 331,
+        "commande_id": 167,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 332,
+        "commande_id": 168,
+        "produit_id": 22,
+        "quantite": 4,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 333,
+        "commande_id": 168,
+        "produit_id": 5,
+        "quantite": 1,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 334,
+        "commande_id": 169,
+        "produit_id": 3,
+        "quantite": 1,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 335,
+        "commande_id": 169,
+        "produit_id": 10,
+        "quantite": 2,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 336,
+        "commande_id": 169,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 337,
+        "commande_id": 170,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 338,
+        "commande_id": 171,
+        "produit_id": 13,
+        "quantite": 3,
+        "prix_unitaire_applique": 603
+      },
+      {
+        "id": 339,
+        "commande_id": 171,
+        "produit_id": 20,
+        "quantite": 4,
+        "prix_unitaire_applique": 261
+      },
+      {
+        "id": 340,
+        "commande_id": 172,
+        "produit_id": 18,
+        "quantite": 4,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 341,
+        "commande_id": 172,
+        "produit_id": 1,
+        "quantite": 1,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 342,
+        "commande_id": 172,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 343,
+        "commande_id": 173,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 344,
+        "commande_id": 174,
+        "produit_id": 4,
+        "quantite": 2,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 345,
+        "commande_id": 174,
+        "produit_id": 11,
+        "quantite": 3,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 346,
+        "commande_id": 175,
+        "produit_id": 9,
+        "quantite": 3,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 347,
+        "commande_id": 175,
+        "produit_id": 16,
+        "quantite": 4,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 348,
+        "commande_id": 175,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 349,
+        "commande_id": 176,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 220.5
+      },
+      {
+        "id": 350,
+        "commande_id": 177,
+        "produit_id": 19,
+        "quantite": 1,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 351,
+        "commande_id": 177,
+        "produit_id": 2,
+        "quantite": 2,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 352,
+        "commande_id": 178,
+        "produit_id": 24,
+        "quantite": 2,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 353,
+        "commande_id": 178,
+        "produit_id": 7,
+        "quantite": 3,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 354,
+        "commande_id": 178,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 355,
+        "commande_id": 179,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 356,
+        "commande_id": 180,
+        "produit_id": 10,
+        "quantite": 4,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 357,
+        "commande_id": 180,
+        "produit_id": 17,
+        "quantite": 1,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 358,
+        "commande_id": 181,
+        "produit_id": 15,
+        "quantite": 1,
+        "prix_unitaire_applique": 121.5
+      },
+      {
+        "id": 359,
+        "commande_id": 181,
+        "produit_id": 22,
+        "quantite": 2,
+        "prix_unitaire_applique": 76.5
+      },
+      {
+        "id": 360,
+        "commande_id": 181,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1008
+      },
+      {
+        "id": 361,
+        "commande_id": 182,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 362,
+        "commande_id": 183,
+        "produit_id": 1,
+        "quantite": 3,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 363,
+        "commande_id": 183,
+        "produit_id": 8,
+        "quantite": 4,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 364,
+        "commande_id": 184,
+        "produit_id": 6,
+        "quantite": 4,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 365,
+        "commande_id": 184,
+        "produit_id": 13,
+        "quantite": 1,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 366,
+        "commande_id": 184,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 367,
+        "commande_id": 185,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 368,
+        "commande_id": 186,
+        "produit_id": 16,
+        "quantite": 2,
+        "prix_unitaire_applique": 175.5
+      },
+      {
+        "id": 369,
+        "commande_id": 186,
+        "produit_id": 23,
+        "quantite": 3,
+        "prix_unitaire_applique": 279
+      },
+      {
+        "id": 370,
+        "commande_id": 187,
+        "produit_id": 21,
+        "quantite": 3,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 371,
+        "commande_id": 187,
+        "produit_id": 4,
+        "quantite": 4,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 372,
+        "commande_id": 187,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 373,
+        "commande_id": 188,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 374,
+        "commande_id": 189,
+        "produit_id": 7,
+        "quantite": 1,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 375,
+        "commande_id": 189,
+        "produit_id": 14,
+        "quantite": 2,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 376,
+        "commande_id": 190,
+        "produit_id": 12,
+        "quantite": 2,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 377,
+        "commande_id": 190,
+        "produit_id": 19,
+        "quantite": 3,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 378,
+        "commande_id": 190,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 379,
+        "commande_id": 191,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1620
+      },
+      {
+        "id": 380,
+        "commande_id": 192,
+        "produit_id": 22,
+        "quantite": 4,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 381,
+        "commande_id": 192,
+        "produit_id": 5,
+        "quantite": 1,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 382,
+        "commande_id": 193,
+        "produit_id": 3,
+        "quantite": 1,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 383,
+        "commande_id": 193,
+        "produit_id": 10,
+        "quantite": 2,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 384,
+        "commande_id": 193,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 385,
+        "commande_id": 194,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 386,
+        "commande_id": 195,
+        "produit_id": 13,
+        "quantite": 3,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 387,
+        "commande_id": 195,
+        "produit_id": 20,
+        "quantite": 4,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 388,
+        "commande_id": 196,
+        "produit_id": 18,
+        "quantite": 4,
+        "prix_unitaire_applique": 378
+      },
+      {
+        "id": 389,
+        "commande_id": 196,
+        "produit_id": 1,
+        "quantite": 1,
+        "prix_unitaire_applique": 2205
+      },
+      {
+        "id": 390,
+        "commande_id": 196,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 85.5
+      },
+      {
+        "id": 391,
+        "commande_id": 197,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 392,
+        "commande_id": 198,
+        "produit_id": 4,
+        "quantite": 2,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 393,
+        "commande_id": 198,
+        "produit_id": 11,
+        "quantite": 3,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 394,
+        "commande_id": 199,
+        "produit_id": 9,
+        "quantite": 3,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 395,
+        "commande_id": 199,
+        "produit_id": 16,
+        "quantite": 4,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 396,
+        "commande_id": 199,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 397,
+        "commande_id": 200,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 398,
+        "commande_id": 201,
+        "produit_id": 19,
+        "quantite": 1,
+        "prix_unitaire_applique": 675
+      },
+      {
+        "id": 399,
+        "commande_id": 201,
+        "produit_id": 2,
+        "quantite": 2,
+        "prix_unitaire_applique": 1251
+      },
+      {
+        "id": 400,
+        "commande_id": 202,
+        "produit_id": 24,
+        "quantite": 2,
+        "prix_unitaire_applique": 145
+      },
+      {
+        "id": 401,
+        "commande_id": 202,
+        "produit_id": 7,
+        "quantite": 3,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 402,
+        "commande_id": 202,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 403,
+        "commande_id": 203,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 404,
+        "commande_id": 204,
+        "produit_id": 10,
+        "quantite": 4,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 405,
+        "commande_id": 204,
+        "produit_id": 17,
+        "quantite": 1,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 406,
+        "commande_id": 205,
+        "produit_id": 15,
+        "quantite": 1,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 407,
+        "commande_id": 205,
+        "produit_id": 22,
+        "quantite": 2,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 408,
+        "commande_id": 205,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 409,
+        "commande_id": 206,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 261
+      },
+      {
+        "id": 410,
+        "commande_id": 207,
+        "produit_id": 1,
+        "quantite": 3,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 411,
+        "commande_id": 207,
+        "produit_id": 8,
+        "quantite": 4,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 412,
+        "commande_id": 208,
+        "produit_id": 6,
+        "quantite": 4,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 413,
+        "commande_id": 208,
+        "produit_id": 13,
+        "quantite": 1,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 414,
+        "commande_id": 208,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 415,
+        "commande_id": 209,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 416,
+        "commande_id": 210,
+        "produit_id": 16,
+        "quantite": 2,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 417,
+        "commande_id": 210,
+        "produit_id": 23,
+        "quantite": 3,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 418,
+        "commande_id": 211,
+        "produit_id": 21,
+        "quantite": 3,
+        "prix_unitaire_applique": 25.2
+      },
+      {
+        "id": 419,
+        "commande_id": 211,
+        "produit_id": 4,
+        "quantite": 4,
+        "prix_unitaire_applique": 801
+      },
+      {
+        "id": 420,
+        "commande_id": 211,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 441
+      },
+      {
+        "id": 421,
+        "commande_id": 212,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 422,
+        "commande_id": 213,
+        "produit_id": 7,
+        "quantite": 1,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 423,
+        "commande_id": 213,
+        "produit_id": 14,
+        "quantite": 2,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 424,
+        "commande_id": 214,
+        "produit_id": 12,
+        "quantite": 2,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 425,
+        "commande_id": 214,
+        "produit_id": 19,
+        "quantite": 3,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 426,
+        "commande_id": 214,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 427,
+        "commande_id": 215,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 428,
+        "commande_id": 216,
+        "produit_id": 22,
+        "quantite": 4,
+        "prix_unitaire_applique": 76.5
+      },
+      {
+        "id": 429,
+        "commande_id": 216,
+        "produit_id": 5,
+        "quantite": 1,
+        "prix_unitaire_applique": 1008
+      },
+      {
+        "id": 430,
+        "commande_id": 217,
+        "produit_id": 3,
+        "quantite": 1,
+        "prix_unitaire_applique": 580
+      },
+      {
+        "id": 431,
+        "commande_id": 217,
+        "produit_id": 10,
+        "quantite": 2,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 432,
+        "commande_id": 217,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 433,
+        "commande_id": 218,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 434,
+        "commande_id": 219,
+        "produit_id": 13,
+        "quantite": 3,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 435,
+        "commande_id": 219,
+        "produit_id": 20,
+        "quantite": 4,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 436,
+        "commande_id": 220,
+        "produit_id": 18,
+        "quantite": 4,
+        "prix_unitaire_applique": 420
+      },
+      {
+        "id": 437,
+        "commande_id": 220,
+        "produit_id": 1,
+        "quantite": 1,
+        "prix_unitaire_applique": 2450
+      },
+      {
+        "id": 438,
+        "commande_id": 220,
+        "produit_id": 8,
+        "quantite": 2,
+        "prix_unitaire_applique": 95
+      },
+      {
+        "id": 439,
+        "commande_id": 221,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 279
+      },
+      {
+        "id": 440,
+        "commande_id": 222,
+        "produit_id": 4,
+        "quantite": 2,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 441,
+        "commande_id": 222,
+        "produit_id": 11,
+        "quantite": 3,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 442,
+        "commande_id": 223,
+        "produit_id": 9,
+        "quantite": 3,
+        "prix_unitaire_applique": 2180
+      },
+      {
+        "id": 443,
+        "commande_id": 223,
+        "produit_id": 16,
+        "quantite": 4,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 444,
+        "commande_id": 223,
+        "produit_id": 23,
+        "quantite": 1,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 445,
+        "commande_id": 224,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 446,
+        "commande_id": 225,
+        "produit_id": 19,
+        "quantite": 1,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 447,
+        "commande_id": 225,
+        "produit_id": 2,
+        "quantite": 2,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 448,
+        "commande_id": 226,
+        "produit_id": 24,
+        "quantite": 2,
+        "prix_unitaire_applique": 130.5
+      },
+      {
+        "id": 449,
+        "commande_id": 226,
+        "produit_id": 7,
+        "quantite": 3,
+        "prix_unitaire_applique": 306
+      },
+      {
+        "id": 450,
+        "commande_id": 226,
+        "produit_id": 14,
+        "quantite": 4,
+        "prix_unitaire_applique": 220.5
+      },
+      {
+        "id": 451,
+        "commande_id": 227,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 452,
+        "commande_id": 228,
+        "produit_id": 10,
+        "quantite": 4,
+        "prix_unitaire_applique": 1420
+      },
+      {
+        "id": 453,
+        "commande_id": 228,
+        "produit_id": 17,
+        "quantite": 1,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 454,
+        "commande_id": 229,
+        "produit_id": 15,
+        "quantite": 1,
+        "prix_unitaire_applique": 135
+      },
+      {
+        "id": 455,
+        "commande_id": 229,
+        "produit_id": 22,
+        "quantite": 2,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 456,
+        "commande_id": 229,
+        "produit_id": 5,
+        "quantite": 3,
+        "prix_unitaire_applique": 1120
+      },
+      {
+        "id": 457,
+        "commande_id": 230,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 458,
+        "commande_id": 231,
+        "produit_id": 1,
+        "quantite": 3,
+        "prix_unitaire_applique": 2205
+      },
+      {
+        "id": 459,
+        "commande_id": 231,
+        "produit_id": 8,
+        "quantite": 4,
+        "prix_unitaire_applique": 85.5
+      },
+      {
+        "id": 460,
+        "commande_id": 232,
+        "produit_id": 6,
+        "quantite": 4,
+        "prix_unitaire_applique": 1650
+      },
+      {
+        "id": 461,
+        "commande_id": 232,
+        "produit_id": 13,
+        "quantite": 1,
+        "prix_unitaire_applique": 670
+      },
+      {
+        "id": 462,
+        "commande_id": 232,
+        "produit_id": 20,
+        "quantite": 2,
+        "prix_unitaire_applique": 290
+      },
+      {
+        "id": 463,
+        "commande_id": 233,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 464,
+        "commande_id": 234,
+        "produit_id": 16,
+        "quantite": 2,
+        "prix_unitaire_applique": 195
+      },
+      {
+        "id": 465,
+        "commande_id": 234,
+        "produit_id": 23,
+        "quantite": 3,
+        "prix_unitaire_applique": 310
+      },
+      {
+        "id": 466,
+        "commande_id": 235,
+        "produit_id": 21,
+        "quantite": 3,
+        "prix_unitaire_applique": 28
+      },
+      {
+        "id": 467,
+        "commande_id": 235,
+        "produit_id": 4,
+        "quantite": 4,
+        "prix_unitaire_applique": 890
+      },
+      {
+        "id": 468,
+        "commande_id": 235,
+        "produit_id": 11,
+        "quantite": 1,
+        "prix_unitaire_applique": 490
+      },
+      {
+        "id": 469,
+        "commande_id": 236,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1251
+      },
+      {
+        "id": 470,
+        "commande_id": 237,
+        "produit_id": 7,
+        "quantite": 1,
+        "prix_unitaire_applique": 340
+      },
+      {
+        "id": 471,
+        "commande_id": 237,
+        "produit_id": 14,
+        "quantite": 2,
+        "prix_unitaire_applique": 245
+      },
+      {
+        "id": 472,
+        "commande_id": 238,
+        "produit_id": 12,
+        "quantite": 2,
+        "prix_unitaire_applique": 3890
+      },
+      {
+        "id": 473,
+        "commande_id": 238,
+        "produit_id": 19,
+        "quantite": 3,
+        "prix_unitaire_applique": 750
+      },
+      {
+        "id": 474,
+        "commande_id": 238,
+        "produit_id": 2,
+        "quantite": 4,
+        "prix_unitaire_applique": 1390
+      },
+      {
+        "id": 475,
+        "commande_id": 239,
+        "produit_id": 17,
+        "quantite": 3,
+        "prix_unitaire_applique": 1800
+      },
+      {
+        "id": 476,
+        "commande_id": 240,
+        "produit_id": 22,
+        "quantite": 4,
+        "prix_unitaire_applique": 85
+      },
+      {
+        "id": 477,
+        "commande_id": 240,
+        "produit_id": 5,
+        "quantite": 1,
+        "prix_unitaire_applique": 1120
+      }
+    ],
+    "employes": [
+      {
+        "id": 1,
+        "nom": "Claire Moreau",
+        "poste": "Directrice Technique (CTO)",
+        "manager_id": null,
+        "departement": "Direction",
+        "salaire": 92000
+      },
+      {
+        "id": 2,
+        "nom": "Marc Delacroix",
+        "poste": "VP Architecture Data",
+        "manager_id": 1,
+        "departement": "Data",
+        "salaire": 76000
+      },
+      {
+        "id": 3,
+        "nom": "Sophie Vasseur",
+        "poste": "VP Infrastructure",
+        "manager_id": 1,
+        "departement": "Infra",
+        "salaire": 74000
+      },
+      {
+        "id": 4,
+        "nom": "Antoine Renaud",
+        "poste": "Lead DBA PostgreSQL",
+        "manager_id": 2,
+        "departement": "Data",
+        "salaire": 62000
+      },
+      {
+        "id": 5,
+        "nom": "Nadia Benali",
+        "poste": "Lead Data Engineer",
+        "manager_id": 2,
+        "departement": "Data",
+        "salaire": 64000
+      },
+      {
+        "id": 6,
+        "nom": "Julien Caron",
+        "poste": "Architecte NoSQL",
+        "manager_id": 2,
+        "departement": "Data",
+        "salaire": 61000
+      },
+      {
+        "id": 7,
+        "nom": "Pauline Lefort",
+        "poste": "Ingénieure SRE",
+        "manager_id": 3,
+        "departement": "Infra",
+        "salaire": 56000
+      },
+      {
+        "id": 8,
+        "nom": "Romain Fabre",
+        "poste": "Administrateur Réseau",
+        "manager_id": 3,
+        "departement": "Infra",
+        "salaire": 51000
+      },
+      {
+        "id": 9,
+        "nom": "Émilie Maillard",
+        "poste": "DBA Junior",
+        "manager_id": 4,
+        "departement": "Data",
+        "salaire": 42000
+      },
+      {
+        "id": 10,
+        "nom": "Bastien Royer",
+        "poste": "Analyste SQL BI",
+        "manager_id": 4,
+        "departement": "Data",
+        "salaire": 44000
+      },
+      {
+        "id": 11,
+        "nom": "Kévin Giraud",
+        "poste": "Développeur ETL",
+        "manager_id": 5,
+        "departement": "Data",
+        "salaire": 45000
+      },
+      {
+        "id": 12,
+        "nom": "Océane Simon",
+        "poste": "Technicienne Datacenter",
+        "manager_id": 7,
+        "departement": "Infra",
+        "salaire": 38000
+      }
+    ],
+    "comptes_bancaires": [
+      {
+        "id": 1,
+        "titulaire": "HexaTech SAS",
+        "solde": 15000,
+        "statut": "ACTIF"
+      },
+      {
+        "id": 2,
+        "titulaire": "NovaLab SARL",
+        "solde": 8400,
+        "statut": "ACTIF"
+      },
+      {
+        "id": 3,
+        "titulaire": "Atelier Numérique",
+        "solde": 3200,
+        "statut": "ACTIF"
+      },
+      {
+        "id": 4,
+        "titulaire": "CloudOps France",
+        "solde": 22500,
+        "statut": "ACTIF"
+      }
+    ]
+  },
+  "schemas": {
+    "categories": {
+      "name": "categories",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "nom",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "marge_cible",
+          "type": "NUMERIC"
+        }
+      ]
+    },
+    "entrepots": {
+      "name": "entrepots",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "nom",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "ville",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "capacite_m3",
+          "type": "INT"
+        }
+      ]
+    },
+    "produits": {
+      "name": "produits",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "nom",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "categorie_id",
+          "type": "INT",
+          "fk": "categories.id"
+        },
+        {
+          "name": "prix_unitaire",
+          "type": "NUMERIC"
+        },
+        {
+          "name": "stock",
+          "type": "INT"
+        },
+        {
+          "name": "entrepot_id",
+          "type": "INT",
+          "fk": "entrepots.id"
+        }
+      ]
+    },
+    "clients": {
+      "name": "clients",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "nom",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "email",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "ville",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "segment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "date_inscription",
+          "type": "DATE"
+        }
+      ]
+    },
+    "commandes": {
+      "name": "commandes",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "client_id",
+          "type": "INT",
+          "fk": "clients.id"
+        },
+        {
+          "name": "date_commande",
+          "type": "DATE"
+        },
+        {
+          "name": "statut",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "canal",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "montant_total",
+          "type": "NUMERIC"
+        }
+      ],
+      "partitionedBy": {
+        "strategy": "RANGE",
+        "column": "date_commande",
+        "partitions": [
+          {
+            "name": "commandes_2024",
+            "min": "2024-01-01",
+            "max": "2024-12-31"
+          },
+          {
+            "name": "commandes_2025",
+            "min": "2025-01-01",
+            "max": "2025-12-31"
+          },
+          {
+            "name": "commandes_2026",
+            "min": "2026-01-01",
+            "max": "2026-12-31"
+          }
+        ]
+      }
+    },
+    "lignes_commande": {
+      "name": "lignes_commande",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "commande_id",
+          "type": "INT",
+          "fk": "commandes.id"
+        },
+        {
+          "name": "produit_id",
+          "type": "INT",
+          "fk": "produits.id"
+        },
+        {
+          "name": "quantite",
+          "type": "INT"
+        },
+        {
+          "name": "prix_unitaire_applique",
+          "type": "NUMERIC"
+        }
+      ]
+    },
+    "employes": {
+      "name": "employes",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "nom",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "poste",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "manager_id",
+          "type": "INT",
+          "nullable": true,
+          "fk": "employes.id"
+        },
+        {
+          "name": "departement",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "salaire",
+          "type": "NUMERIC"
+        }
+      ]
+    },
+    "comptes_bancaires": {
+      "name": "comptes_bancaires",
+      "columns": [
+        {
+          "name": "id",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "titulaire",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "solde",
+          "type": "NUMERIC"
+        },
+        {
+          "name": "statut",
+          "type": "VARCHAR"
+        }
+      ]
+    }
+  },
+  "indexes": [
+    {
+      "name": "pk_categories",
+      "table": "categories",
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "type": "BTREE",
+      "builtIn": true
+    },
+    {
+      "name": "pk_entrepots",
+      "table": "entrepots",
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "type": "BTREE",
+      "builtIn": true
+    },
+    {
+      "name": "pk_produits",
+      "table": "produits",
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "type": "BTREE",
+      "builtIn": true
+    },
+    {
+      "name": "pk_clients",
+      "table": "clients",
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "type": "BTREE",
+      "builtIn": true
+    },
+    {
+      "name": "pk_commandes",
+      "table": "commandes",
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "type": "BTREE",
+      "builtIn": true
+    },
+    {
+      "name": "pk_lignes_commande",
+      "table": "lignes_commande",
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "type": "BTREE",
+      "builtIn": true
+    },
+    {
+      "name": "pk_employes",
+      "table": "employes",
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "type": "BTREE",
+      "builtIn": true
+    },
+    {
+      "name": "pk_comptes_bancaires",
+      "table": "comptes_bancaires",
+      "columns": [
+        "id"
+      ],
+      "unique": true,
+      "type": "BTREE",
+      "builtIn": true
+    }
+  ],
+  "materializedViews": {},
+  "partitioningEnabled": false,
+  "nosql": {
+    "kv_sessions": [
+      {
+        "key": "session:usr_1042",
+        "value": {
+          "client_id": 2,
+          "panier": [
+            1,
+            5
+          ],
+          "theme": "claire",
+          "derniere_activite": "2026-11-15T11:30:00Z"
+        },
+        "ttl_sec": 1800
+      },
+      {
+        "key": "rate_limit:192.168.1.44",
+        "value": {
+          "requetes": 42,
+          "fenetre_sec": 60
+        },
+        "ttl_sec": 45
+      },
+      {
+        "key": "cache:top_produits_2026",
+        "value": [
+          1,
+          12,
+          6,
+          9
+        ],
+        "ttl_sec": 3600
+      },
+      {
+        "key": "stock_lock:prod_1",
+        "value": {
+          "reserve_par": "cmd_2091",
+          "qte": 2
+        },
+        "ttl_sec": 300
+      }
+    ],
+    "doc_catalog": [
+      {
+        "_id": "prod_rack_e24",
+        "nom": "Rack Serveur Xeon E24",
+        "categorie": "Serveurs & Stockage",
+        "prix": 2450,
+        "specs": {
+          "cpu": "2x Xeon Gold",
+          "ram_max_go": 512,
+          "baies": 8,
+          "alimentation": "Redondante 800W"
+        },
+        "tags": [
+          "datacenter",
+          "virtualisation",
+          "2U"
+        ],
+        "avis": [
+          {
+            "auteur": "Lucas M.",
+            "note": 5,
+            "commentaire": "Très stable sous forte charge."
+          },
+          {
+            "auteur": "Claire M.",
+            "note": 4,
+            "commentaire": "Ventilation audible à pleine charge."
+          }
+        ]
+      },
+      {
+        "_id": "prod_fw_utm",
+        "nom": "Pare-feu UTM Enterprise",
+        "categorie": "Réseau & Sécurité",
+        "prix": 1650,
+        "specs": {
+          "debit_ips_gbps": 4.5,
+          "vpn_tunnels": 500,
+          "ports_10g": 4
+        },
+        "tags": [
+          "securite",
+          "ips",
+          "vpn"
+        ],
+        "avis": [
+          {
+            "auteur": "Emma F.",
+            "note": 5,
+            "commentaire": "Inspection SSL très performante."
+          }
+        ]
+      },
+      {
+        "_id": "prod_lic_sgbd",
+        "nom": "Licence SGBD Cluster 1 An",
+        "categorie": "Licences & Cloud",
+        "prix": 1800,
+        "specs": {
+          "noeuds_inclus": 3,
+          "support": "24/7 SLA 99.99%",
+          "chiffrement_tde": true
+        },
+        "tags": [
+          "sql",
+          "cluster",
+          "entreprise"
+        ],
+        "avis": []
+      }
+    ],
+    "col_telemetrie": [
+      {
+        "partition_key": "capteur_lyon_01:2026-11-15",
+        "clustering_key": "12:00:00",
+        "temp_c": 21.4,
+        "cpu_pct": 68,
+        "latence_ms": 4.2
+      },
+      {
+        "partition_key": "capteur_lyon_01:2026-11-15",
+        "clustering_key": "12:05:00",
+        "temp_c": 22.1,
+        "cpu_pct": 74,
+        "latence_ms": 5.1
+      },
+      {
+        "partition_key": "capteur_lyon_01:2026-11-15",
+        "clustering_key": "12:10:00",
+        "temp_c": 23.8,
+        "cpu_pct": 89,
+        "latence_ms": 11.4
+      },
+      {
+        "partition_key": "capteur_paris_02:2026-11-15",
+        "clustering_key": "12:00:00",
+        "temp_c": 19.6,
+        "cpu_pct": 41,
+        "latence_ms": 2.8
+      },
+      {
+        "partition_key": "capteur_paris_02:2026-11-15",
+        "clustering_key": "12:05:00",
+        "temp_c": 19.8,
+        "cpu_pct": 43,
+        "latence_ms": 2.9
+      }
+    ],
+    "graph_recommandations": {
+      "nodes": [
+        {
+          "id": "c1",
+          "label": "Client",
+          "name": "Camille Laurent",
+          "ville": "Lyon"
+        },
+        {
+          "id": "c2",
+          "label": "Client",
+          "name": "Lucas Moreau",
+          "ville": "Paris"
+        },
+        {
+          "id": "c3",
+          "label": "Client",
+          "name": "Inès Bernard",
+          "ville": "Nantes"
+        },
+        {
+          "id": "p1",
+          "label": "Produit",
+          "name": "Rack Xeon E24",
+          "prix": 2450
+        },
+        {
+          "id": "p5",
+          "label": "Produit",
+          "name": "Switch L3 48P",
+          "prix": 1120
+        },
+        {
+          "id": "p6",
+          "label": "Produit",
+          "name": "Pare-feu UTM",
+          "prix": 1650
+        },
+        {
+          "id": "p17",
+          "label": "Produit",
+          "name": "Licence SGBD Cluster",
+          "prix": 1800
+        }
+      ],
+      "edges": [
+        {
+          "from": "c1",
+          "to": "p1",
+          "type": "ACHETE"
+        },
+        {
+          "from": "c1",
+          "to": "p5",
+          "type": "ACHETE"
+        },
+        {
+          "from": "c2",
+          "to": "p1",
+          "type": "ACHETE"
+        },
+        {
+          "from": "c2",
+          "to": "p5",
+          "type": "ACHETE"
+        },
+        {
+          "from": "c2",
+          "to": "p6",
+          "type": "ACHETE"
+        },
+        {
+          "from": "c2",
+          "to": "p17",
+          "type": "ACHETE"
+        },
+        {
+          "from": "c3",
+          "to": "p6",
+          "type": "ACHETE"
+        },
+        {
+          "from": "c1",
+          "to": "c2",
+          "type": "CONNAIT"
+        }
+      ]
+    }
+  },
+  "progress": {
+    "completedChallenges": [],
+    "completedReviews": [],
+    "completedCaseStudies": [],
+    "savedQueries": [
+      {
+        "id": "q1",
+        "title": "CA par segment client (2026)",
+        "sql": "SELECT c.segment, COUNT(*) AS nb_commandes, ROUND(SUM(cmd.montant_total), 2) AS ca_total\nFROM commandes cmd\nJOIN clients c ON cmd.client_id = c.id\nWHERE cmd.date_commande >= '2026-01-01'\n  AND cmd.statut = 'LIVREE'\nGROUP BY c.segment\nORDER BY ca_total DESC;",
+        "createdAt": "2026-11-15"
+      }
+    ]
+  }
+}
