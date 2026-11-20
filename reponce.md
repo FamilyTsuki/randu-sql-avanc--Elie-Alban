@@ -51,4 +51,9 @@ Filtre : statut = LIVREE AND date_commande >= 2026-01-01
 
 
  ## 3.
+
+ fichier sql_2
+
+ # P2
+
  
