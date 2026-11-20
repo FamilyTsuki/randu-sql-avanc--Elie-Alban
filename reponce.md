@@ -16,30 +16,30 @@ absance d'indexation randu ancor plus lourd a cose de SELECT\*
 fichier [sql_1.sql](sqlFile/sql_1.sql)
 
 Limit
-Coût : 27.41..29.36
+Coût : 31.03..33.28
 Lignes : 10
-Temps : 3.41 ms
-Buffers : 5 hit / 2 read
+Temps : 3.76 ms
+Buffers : 6 hit / 2 read
 LIMIT 10
 Sort
-Coût : 27.41..29.36
-Lignes : 39
-Temps : 3.41 ms
-Buffers : 5 hit / 2 read
+Coût : 31.03..33.28
+Lignes : 45
+Temps : 3.76 ms
+Buffers : 6 hit / 2 read
 Tri sur montant_total DESC
 Partition Pruningsur commandes
 Accès optimisé
-Coût : 0..23.9
-Lignes : 39
-Temps : 2.96 ms
-Buffers : 5 hit / 2 read
+Coût : 0..26.98
+Lignes : 45
+Temps : 3.31 ms
+Buffers : 6 hit / 2 read
 Partitions scannées : commandes_2026 (1/3)
 Filtre : statut = LIVREE AND YEAR ( date_commande ) = 2026
 
 Partition Pruningsur commandesvia idx_cmd_date
 Accès optimisé
-Coût : 0.15..9.27
-Lignes : 39
+Coût : 0.15..9.53
+Lignes : 45
 Temps : 0.38 ms
 Buffers : 4 hit / 0 read
 Partitions scannées : commandes_2026 (1/3)
