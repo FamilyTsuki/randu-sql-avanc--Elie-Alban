@@ -36,7 +36,6 @@ Buffers : 5 hit / 2 read
 Partitions scannées : commandes_2026 (1/3)
 Filtre : statut = LIVREE AND YEAR ( date_commande ) = 2026
 
-
 Partition Pruningsur commandesvia idx_cmd_date
 Accès optimisé
 Coût : 0.15..9.27
@@ -46,14 +45,28 @@ Buffers : 4 hit / 0 read
 Partitions scannées : commandes_2026 (1/3)
 Filtre : statut = LIVREE AND date_commande >= 2026-01-01
 
+Partition Pruning permet d'exclure les pzrtition 2024 et 2025 sans il lirais les 3 sa fais donc gager 2/3 de temp
 
- Partition Pruning permet d'exclure les pzrtition 2024 et 2025 sans il lirais les 3 sa fais donc gager 2/3 de temp
+## 3.
 
+fichier sql_2
 
- ## 3.
+# P2
 
- fichier sql_2
+## 4.
 
- # P2
+1FN: Atomisation de projets_liste -> clé composite (employe_id, projet_id).
+2FN: Suppression des dépendances partielles -> isolation de employes et projets.
+3FN: Suppression des dépendances transitives -> isolation de departements et chefs_projet.
 
- 
+#### Tables 3FN finales :
+
+1. departements (id PK, nom)
+2. employes (id PK, nom, dept_id FK)
+3. chefs_projet (id PK, nom, tel)
+4. projets (id PK, nom, chef_id FK)
+5. affectations (employe_id PK FK, projet_id PK FK)
+
+## 5.
+
+fichier sql_3
